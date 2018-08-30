@@ -4,12 +4,23 @@
   "private": true,
   "homepage": "https://tesshin.github.io",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.4",
+    "@fortawesome/free-solid-svg-icons": "^5.3.1",
+    "@fortawesome/react-fontawesome": "^0.1.2",
+    "@fortawesome/free-regular-svg-icons": "^5.3.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-router-dom": "^4.3.1",
+    "react-router-hash-link": "^1.2.0",
     "react-scripts": "1.1.5"
   },
   "devDependencies": {
-    "gh-pages": "^1.2.0"
+    "gh-pages": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-changed": "^3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
