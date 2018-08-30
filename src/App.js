@@ -1,19 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { far } from "@fortawesome/free-regular-svg-icons";
+import { faClock, faImage } from "@fortawesome/free-solid-svg-icons";
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom';
+
+import Homepage from "./components/Pages/homepage";
+import Documentation from "./components/Pages/documentation";
+
+import "./assets/css/style.min.css";
+
+library.add(far, faClock, faImage);
 
 class App extends Component {
   render() {
     return (
+      <Router>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/documentation" component={Documentation} />
       </div>
+      </Router>
     );
   }
 }

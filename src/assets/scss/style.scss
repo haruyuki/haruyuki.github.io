@@ -1,0 +1,211 @@
+@import "config";
+
+/* =-============= Header =============-= */
+.header {
+  padding: 10px 0;
+  background: $base;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+
+  &.navbar-fixed-top {
+    background: #fff;
+    z-index: 9999;
+    @include box-shadow (0 0 4px rgba(0,0,0,0.4));
+    .logo {
+      a {
+        color: $base;
+      }
+    }
+  }
+
+  .logo {
+    margin: 0;
+    font-size: 26px;
+    padding-top: 10px;
+    a {
+      color:#fff;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .main-nav {
+    .navbar-collapse {
+      padding: 0;
+    }
+    .navbar-toggler {
+      margin-right: 0;
+      background: none;
+      float: right;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      padding: 8px 8px;
+      right:10px;
+      top: 10px;
+      background: darken($base, 30%);
+
+      &:focus {
+        outline: none;
+      }
+      .icon-bar {
+        display: block;
+        background-color: #fff;
+        height: 2px;
+        width: 22px;
+        @include border-radius(1px);
+        & + .icon-bar {
+          margin-top: 4px;
+
+        }
+      }
+      &:hover {
+        .icon-bar {
+          background-color: #fff;
+        }
+      }
+    }
+
+    .nav {
+      .nav-item {
+        font-weight: bold;
+        margin-right: 30px;
+        font-family: 'Montserrat', sans-serif;
+
+        .nav-link {
+          color: darken($base, 25%);
+          @include transition (none);
+          font-size: 14px;
+          padding: 15px 10px;
+          &.active {
+            color: $base;
+            background: none;
+          }
+          &:hover {
+            color: darken($base, 30%);
+            background: none;
+          }
+          &:focus {
+            outline: none;
+            background: none;
+          }
+          &:active {
+            outline: none;
+            background: none;
+          }
+        }
+
+        &.last {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+/* =-============= Promo =============-= */
+.promo {
+  background: $base;
+  color: #fff;
+  padding-top: 150px;
+  .title {
+    font-size: 98px;
+    color: darken($base, 30%);
+    margin-top: 0;
+    font-family: 'Lilita One', cursive;
+    .highlight-left {
+      @include gradient(#f0fc7e, #b5f84b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .highlight-right {
+      @include gradient(#fd9d4d, #bf6d36);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .intro {
+    font-size: 28px;
+    max-width: 680px;
+    margin: 0 auto 30px auto;
+  }
+
+  .btns {
+    .btn {
+      margin-right: 15px;
+      font-size: 18px;
+      padding: 8px 30px;
+    }
+  }
+
+  .meta {
+    margin-top: 120px;
+    margin-bottom: 30px;
+    color: darken($base, 20%);
+    li {
+      margin-right: 15px;
+
+    }
+    a {
+      color: darken($base,20%);
+      &:hover {
+        color: darken($base, 30%);
+      }
+    }
+  }
+
+  .social-media {
+    background: darken($base, 15%);
+    padding: 10px 0;
+    margin: 0 auto;
+    li {
+      margin-top: 15px;
+      &.facebook-like {
+        margin-top: 0;
+        position: relative;
+        top: -5px;
+      }
+    }
+  }
+}
+
+/* =-============= Features =============-= */
+.about {
+  padding: 80px 0;
+  background: $smoky-white;
+  .title {
+    color: darken($base, 30%);
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+  .intro {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .item {
+    position: relative;
+    margin-bottom: 30px;
+    .icon-holder {
+      position: absolute;
+      left: 30px;
+      top: 0;
+      .svg-inline--fa {
+        font-size: 24px;
+        color: darken($base, 30%);
+      }
+    }
+    .content {
+      padding-left: 60px;
+      .sub-title {
+        margin-top: 0;
+        color: darken($base, 30%);
+        font-size: 18px;
+      }
+    }
+  }
+
+}
