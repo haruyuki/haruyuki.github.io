@@ -31,6 +31,10 @@ class Feature extends Component {
           <div className="row">
             {this.featureItem("far", "clock", "Time", "Tells you how long before the pound opens or if the pound is already open.")}
             {this.featureItem("far", "image", "Image", "Displays an image of the pet and its rarity from the given link.")}
+            {this.featureItem("fas", "pencil-alt", "Oekaki", "Displays the Oekaki drawing and stats from the given link.")}
+            {this.featureItem("fas", "paw", "Pet", "Displays pet image as well as pet information from the given link.")}
+            {this.featureItem("fas", "hourglass-half", "Remind Me", "Legacy form of Auto Remind, where you can set a time and the bot will ping you after that time.")}
+            {this.featureItem("fas", "stopwatch", "Auto Remind", "Automatically ping you at a specified time before the pound opens.")}
           </div>
         </div>
       </section>

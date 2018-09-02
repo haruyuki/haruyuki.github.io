@@ -12,11 +12,19 @@ class Promo extends Component {
           </div>
           <ul className="meta list-inline">
             <li className="list-inline-item"><a href="https://github.com/Tesshin/CS-Pound">Code on GitHub</a></li>
-            <li className="list-inline-item"><a href="https://www.patreon.com/cspound">Support me on Patreon!</a></li>
-            <li className="list-inline-item"><a href="https://github.com/Tesshin/JS-Pound">JS Pound</a></li>
           </ul>
         </div>
-        <div className="social-media"> </div>
+        <div className="social-media">
+          <div className="social-media-inner container text-center">
+            <ul className="list-inline mb-2">
+              <li className="list-inline-item">Other Github Projects:</li>
+              <li className="list-inline-item"><a href="https://github.com/Tesshin/JS-Pound">JS Pound</a></li>
+              <li className="list-inline-item"><a href="https://github.com/Tesshin/Reverstone">Reverstone</a></li>
+              <li className="list-inline-item"><a href="https://github.com/Tesshin/Cookie-Tools">Cookie Tools</a></li>
+              <li className="list-inline-item"><a href="https://github.com/Tesshin/Conways-Game-of-Life">Conway's Game of Life</a></li>
+            </ul>
+          </div>
+        </div>
       </section>
     );
   }

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 import Header from "../Header/header";
 import Promo from "../Promo/promo";
-import Feature from "../Feature/feature"
+import Feature from "../Feature/feature";
+import Starting from "../Starting/starting";
 
 import "../../assets/css/style.min.css";
 
@@ -13,6 +14,7 @@ class App extends Component {
           <Header/>
           <Promo/>
           <Feature/>
+          <Starting/>
         </div>
     );
   }

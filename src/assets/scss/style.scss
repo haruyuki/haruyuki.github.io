@@ -49,22 +49,6 @@
       &:focus {
         outline: none;
       }
-      .icon-bar {
-        display: block;
-        background-color: #fff;
-        height: 2px;
-        width: 22px;
-        @include border-radius(1px);
-        & + .icon-bar {
-          margin-top: 4px;
-
-        }
-      }
-      &:hover {
-        .icon-bar {
-          background-color: #fff;
-        }
-      }
     }
 
     .nav {
@@ -207,5 +191,44 @@
       }
     }
   }
+}
 
+/* =-============= Getting Started =============-= */
+.docs {
+  padding: 80px 0;
+  background: $smoky-white;
+  .title {
+    color: darken($base, 30%);
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .docs-inner {
+    max-width: 800px;
+    background: #fff;
+    padding: 30px;
+    @include border-radius(4px);
+    margin: 0 auto;
+  }
+  .block {
+    margin-bottom: 60px;
+  }
+  .code-block {
+    margin: 30px;
+    .code-pre {
+      font-size: 87.5%;
+      background: #272822;
+      padding: 1em;
+      margin: .5em 0;
+      overflow: auto;
+      border-radius: 0.3em;
+
+      .code {
+        color: #f8f8f2;
+        @include text-shadow(0 1px rgba(0, 0, 0, 0.3));
+        font-family: Consolas, Monaco, 'Andale Mono', monospace;
+        direction: ltr;
+        text-align: left;
+      }
+    }
+  }
 }

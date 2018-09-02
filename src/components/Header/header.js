@@ -1,7 +1,21 @@
-import React, { Component } from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
+import React, { Component } from "react";
+import { HashLink as Link } from "react-router-hash-link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+class Item extends Component {
+  render() {
+    return (
+      <li className={this.props.classes}><a className="nav-link scrollto" href={this.props.link}>{this.props.content}</a></li>
+    );
+  }
+}
+
 
 class Header extends Component {
+  ListItem(classes, link, content) {
+    return <Item classes={classes} link={link} content={content}/>
+  }
+
   render() {
     return (
       <header id="header" className="header">
@@ -13,17 +27,16 @@ class Header extends Component {
           <div id="main-nav" className="main-nav navbar-expand-md float-right" role="navigation">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
               <span className="sr-only">Toggle navigation</span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
+              <FontAwesomeIcon icon="bars" inverse={true}/>
             </button>
 
             <nav className="navbar-collapse collapse" id="navbar-collapse">
               <ul className="nav navbar-nav">
-                <li className="nav-item sr-only"><a className="nav-link scrollto" href="">Home</a></li>
-                <li className="nav-item"><a className="nav-link scrollto" href="">About</a></li>
-                <li className="nav-item"><a className="nav-link scrollto" href="">License</a></li>
-                <li className="nav-item last"><a className="nav-link scrollto" href="">Contact</a></li>
+                {this.ListItem("nav-item sr-only", "", "Home")}
+                {this.ListItem("nav-item", "", "About")}
+                {this.ListItem("nav-item", "", "Getting Started")}
+                {this.ListItem("nav-item", "", "License")}
+                {this.ListItem("nav-item last", "", "Contact")}
               </ul>
             </nav>
           </div>

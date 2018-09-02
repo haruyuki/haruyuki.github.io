@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { far } from "@fortawesome/free-regular-svg-icons";
-import { faClock, faImage } from "@fortawesome/free-solid-svg-icons";
+import { faClock, faImage, faPencilAlt, faPaw, faHourglassHalf, faStopwatch, faBars } from "@fortawesome/free-solid-svg-icons";
 import {
   BrowserRouter as Router,
   Route
@@ -12,7 +12,7 @@ import Documentation from "./components/Pages/documentation";
 
 import "./assets/css/style.min.css";
 
-library.add(far, faClock, faImage);
+library.add(far, faClock, faImage, faPencilAlt, faPaw, faHourglassHalf, faStopwatch, faBars);
 
 class App extends Component {
   render() {
