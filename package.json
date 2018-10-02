@@ -1,8 +1,8 @@
 {
-  "name": "tesshin.github.io",
+  "name": "haruyuki.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tesshin.github.io",
+  "homepage": "https://haruyuki.github.io",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
     "@fortawesome/free-solid-svg-icons": "^5.3.1",
