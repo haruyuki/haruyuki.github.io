@@ -13,4 +13,4 @@ script: npm test
 
 after_success:
   - npm run build
-  - gh-pages -b master -d build
+  - npm run deploy
