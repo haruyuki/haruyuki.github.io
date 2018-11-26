@@ -19,6 +19,7 @@ compass:
   include_analytics: true
   # Twitter @username (as defined by the Twitter Card specs)
   twitter: "tailstarthedog"
+  description: "I'm just your average person who happens to love coding! Especially Discord bots."
 
 # exclude
 exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE"]
