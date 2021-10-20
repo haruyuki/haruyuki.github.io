@@ -2,7 +2,7 @@
 
 # skip if build is triggered by pull request
 if [ $TRAVIS_PULL_REQUEST == "true" ]; then
-  echo "this is PR, exiting"
+  echo "This is PR, exiting..."
   exit 0
 fi
 
@@ -10,12 +10,19 @@ fi
 set -e
 
 # clone remote repo to "_site"
-git clone https://${GH_TOKEN}@github.com/haruyuki/beautiful-jekyll.git --branch gh-pages
+git clone https://${GH_TOKEN}@github.com/haruyuki/beautiful-jekyll.git --branch main --single-branch _main
 
 # build with Jekyll into "_site"
+cd _main
 bundle exec jekyll build
 
+cd ..
+git clone https://${GH_TOKEN}@github.com/haruyuki/beautiful-jekyll.git --branch gh-pages --single-branch _site
+
+mv -v _main/_site/* _site/
+
 # push
+cd _site
 git config user.email "10248303+haruyuki@users.noreply.github.com"
 git config user.name "Oliver Lin"
 git add --all
