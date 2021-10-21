@@ -10,14 +10,14 @@ fi
 set -e
 
 # clone remote repo to "_site"
-git clone https://${GH_TOKEN}@github.com/haruyuki/beautiful-jekyll.git --branch main --single-branch _main
+git clone https://${GH_TOKEN}@github.com/haruyuki/haruyuki.github.io.git --branch main --single-branch _main
 
 # build with Jekyll into "_site"
 cd _main
 bundle exec jekyll build
 
 cd ..
-git clone https://${GH_TOKEN}@github.com/haruyuki/beautiful-jekyll.git --branch gh-pages --single-branch _site
+git clone https://${GH_TOKEN}@github.com/haruyuki/haruyuki.github.io.git --branch gh-pages --single-branch _site
 rm -rv _site/*
 
 mv -v _main/_site/* _site/
