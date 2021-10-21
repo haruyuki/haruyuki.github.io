@@ -169,6 +169,7 @@ exclude:
 plugins:
   - jekyll-paginate-v2
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 remove-ads: true
 
