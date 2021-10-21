@@ -26,10 +26,11 @@ rm -rv _site/*
 # Move newly generated build to _site
 mv -v _main/_site/* _site/
 
+
 # Push
 cd _site
 git config user.email "10248303+haruyuki@users.noreply.github.com"
 git config user.name "Oliver Lin"
 git add --all
-git commit -a -m "Travis $TRAVIS_BUILD_NUMBER"
+git commit -a -m "Travis Build $TRAVIS_BUILD_NUMBER"
 git push --force origin gh-pages
