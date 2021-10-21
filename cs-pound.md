@@ -2,8 +2,6 @@
 layout: home2
 title: CS-Pound
 subtitle: The missing link between Discord and Chicken Smoothie.
-redirect_from:
-  - /CS-Pound/
 ---
 
 <div class="main-area jumbotron">
