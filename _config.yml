@@ -135,8 +135,9 @@ timezone: "Australia/Sydney"
 markdown: kramdown
 highlighter: rouge
 permalink: /posts/:year/:title/
-paginate: 5
-paginate_path: "/posts/page:num/"
+paginate:
+  per_page: 5
+  permalink: "/posts/page:num/"
 
 kramdown:
   input: GFM
@@ -166,7 +167,7 @@ exclude:
   - script/
 
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
 
 remove-ads: true
