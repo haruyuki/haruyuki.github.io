@@ -2,7 +2,6 @@
 layout: post
 title: Remind Me bug fixes
 subtitle: v1.2.1
-category: cs-pound
 tags: Update Remind-Me
 ---
 

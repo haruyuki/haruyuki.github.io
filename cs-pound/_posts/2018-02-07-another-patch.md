@@ -2,7 +2,6 @@
 layout: post
 title: Another patch!
 subtitle: v1.2.3
-category: cs-pound
 tags: Update Pet Remind-Me Time
 ---
 

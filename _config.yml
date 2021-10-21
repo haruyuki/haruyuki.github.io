@@ -136,6 +136,8 @@ markdown: kramdown
 highlighter: rouge
 permalink: /posts/:year/:title/
 pagination:
+  enabled: true
+  sort_reverse: true
   per_page: 5
   permalink: "/posts/page:num/"
 

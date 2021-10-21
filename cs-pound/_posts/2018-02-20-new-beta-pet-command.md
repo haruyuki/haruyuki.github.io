@@ -2,7 +2,6 @@
 layout: post
 title: New beta pet command!
 subtitle: v1.3
-category: cs-pound
 tags: Update Pet2
 ---
 

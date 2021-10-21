@@ -2,7 +2,6 @@
 layout: post
 title: Remind Me please!
 subtitle: v1.1
-category: cs-pound
 tags: Update Remind-Me
 ---
 

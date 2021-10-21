@@ -2,7 +2,6 @@
 layout: post
 title: Help is now categorised!
 subtitle: v1.4.2
-category: cs-pound
 tags: Update Help Pet2
 ---
 

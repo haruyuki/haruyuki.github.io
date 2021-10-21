@@ -2,7 +2,6 @@
 layout: post
 title: Statistical stats
 subtitle: v1.4
-category: cs-pound
 tags: Update Remind-Me Statistics
 ---
 

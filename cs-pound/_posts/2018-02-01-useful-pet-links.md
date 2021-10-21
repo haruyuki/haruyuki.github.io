@@ -2,7 +2,6 @@
 layout: post
 title: Useful pet links!
 subtitle: v1.2
-category: cs-pound
 tags: Update Help Pet
 ---
 

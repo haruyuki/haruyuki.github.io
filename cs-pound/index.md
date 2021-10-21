@@ -1,7 +1,10 @@
 ---
-layout: home2
+layout: home
 title: CS-Pound
 subtitle: The missing link between Discord and Chicken Smoothie.
+pagination: 
+  enabled: true
+  category: cs-pound
 ---
 
 <div class="main-area jumbotron">

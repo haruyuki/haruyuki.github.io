@@ -2,7 +2,6 @@
 layout: post
 title: New image command!
 subtitle: v1.5
-category: cs-pound
 tags: Update Help Image Support
 ---
 

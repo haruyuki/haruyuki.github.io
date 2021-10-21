@@ -2,7 +2,6 @@
 layout: post
 title: Bot improvements
 subtitle: v1.2.2
-category: cs-pound
 tags: Update Pet Time
 ---
 

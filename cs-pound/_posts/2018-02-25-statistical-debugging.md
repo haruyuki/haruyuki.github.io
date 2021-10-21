@@ -2,7 +2,6 @@
 layout: post
 title: Statistical debugging
 subtitle: v1.4.1
-category: cs-pound
 tags: Update Remind-Me Statistics
 ---
 

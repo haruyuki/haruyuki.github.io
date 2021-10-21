@@ -2,7 +2,6 @@
 layout: post
 title: Development begins!
 subtitle: v1.0
-category: cs-pound
 tags: Update Help Time
 ---
 
