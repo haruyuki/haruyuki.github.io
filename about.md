@@ -1,16 +1,11 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Haru / Haruyuki / blumewmew
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Oliver, also commonly known online as Haru or blumewmew. I am a student living in Australia and have a great passion for coding.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+My most proud of work would be a Discord bot written in Python for an online virtual pet adoption website Chicken Smoothie. It has been running over 3 years now and is still running in over 800 servers and having more than 15000 users. It was originally my Year 12 Major Project which continued on to become what could now be considered an essential Discord bot for any Chicken Smoothie Discord server.
 
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+I have also done commissions on 3D model texturing, namely avatar models for friends in a popular VR platform VRChat. Given a reference sheet I can colour in a model that they have provided and set it up for use in VRChat. In game I have also used Unity to create a small bar world that has been visited multiple times for events that my friends hold.
