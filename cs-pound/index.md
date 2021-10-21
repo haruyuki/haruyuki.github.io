@@ -20,8 +20,6 @@ pagination:
 
 # Commands
 
-| Name          | Description                                                                                                                      |
-| :---          | :---                                                                                                                             |
 | Auto Remind   | Setup a reminder that will automatically ping you a specified amount of minutes everytime before the Pound or Lost & Found opens |
 | Remind Me     | A reminder that will ping you after a specified amount of time                                                                   |
 | Poundpets     | Creates an image of some of the rares that will appear in the Pound                                                              |
