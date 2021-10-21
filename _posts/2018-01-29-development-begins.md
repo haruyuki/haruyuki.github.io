@@ -3,6 +3,8 @@ layout: post
 title: Development begins!
 subtitle: v1.0
 category: cs-pound
+thumbnail-img: /assets/img/blog/development_begins.png
+share-img: /assets/img/blog/development_begins.png
 tags: Update Help Time
 ---
 
