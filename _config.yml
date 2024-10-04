@@ -7,7 +7,7 @@ compass:
   # an avatar or logo (optional)
   logo: "/images/logo.png"
   # author will appear under the avatar (optional)
-  author: "Haruyuki"
+  author: "Haru"
   # tagline will appear under the title (optional)
   tagline: "(>ω<)"
   # if include_content is true, the contents of the content.html include will be
@@ -18,8 +18,8 @@ compass:
   # Tracking Code to that file.
   include_analytics: true
   # Twitter @username (as defined by the Twitter Card specs)
-  twitter: "BluMewMew"
-  description: "I love to code Discord bots as a hobby, nice to meet you!"
+  twitter: "blumewmew"
+  description: "I'm a small blue furry Akita Inu.  Nice to meet you!"
 
 # exclude
 exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE"]
