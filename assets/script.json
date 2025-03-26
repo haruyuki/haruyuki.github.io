@@ -1,0 +1,3502 @@
+[
+  {
+    "text": "So your name is MC! Nice to meet you!",
+    "type": "script"
+  },
+  {
+    "text": "You're going to have a long day ahead of you today, so get ready!",
+    "type": "script"
+  },
+  {
+    "text": "But first, it's getting late, you should probably go and wake up.",
+    "type": "script"
+  },
+  {
+    "name": "location",
+    "location": "bedroom.html",
+    "type": "transition"
+  },
+  {
+    "name": "MC",
+    "text": "Zzz...",
+    "type": "script"
+  },
+  {
+    "text": "Your alarm clock beeps again for the third time. You instinctively try to reach for your phone again but can't reach it.",
+    "effects": [{"type": "audio", "variable": "alarmSound"}],
+    "type": "script"
+  },
+  {
+    "text": "After trying for a few seconds you get up to turn off the alarm when you realise you are going to be late for school.",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 12", "side": "left"},
+      {"type": "character", "effect": "sleepy", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Ahh! It's 8:30 already! Why did no one wake me up!?",
+    "effects": [{"type": "character", "effect": "shocked", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "text": "Rushing out to the living room you see your little brother about to leave.",
+    "effects": [{"type": "audio", "variable": "bedroomBGM"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Why didn't you wake me up when you saw I wasn't waking up?",
+    "characters": [{"name": "KongXing", "action": "showRight"}],
+    "type": "script"
+  },
+  {
+    "text": "This is my little brother Kong Xing, he's 2 years younger than me but for some reason seems to know a lot more than me... Anyway, he turns his head around as I call out to him.",
+    "type": "script"
+  },
+  {
+    "name": "Kong Xing",
+    "text": "I tried to wake you but you kept pushing me away, so I gave up. Good morning though. I'll be late to class myself if I don't leave now, so bye big brother!",
+    "type": "script"
+  },
+  {
+    "text": "That's all he said before he left the house.",
+    "characters": [{"name": "KongXing", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I need to get packing, otherwise I'll be even more late!",
+    "type": "script"
+  },
+  {
+    "text": "I ran back to my room and put on my uniform and socks before finally grabbing my backpack.",
+    "effects": [
+      {"type":  "character", "effect": "reset", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "location",
+    "location": "table.html",
+    "saveAudio": "bedroomBGM",
+    "type": "transition"
+  },
+  {
+    "name": "MC",
+    "text": "Now what do I need to pack for school today...",
+    "effects": [
+      {"type": "audio", "variable": "bedroomBGM"},
+      {"type": "fadeIn", "variable": "phone"},
+      {"type": "fadeIn", "variable": "water"},
+      {"type": "fadeIn", "variable": "school-book"},
+      {"type": "fadeIn", "variable": "towel"},
+      {"type": "fadeIn", "variable": "tennis_racquet"},
+      {"type": "fadeIn", "variable": "manga"},
+      {"type": "fadeIn", "variable": "wallet"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "My backpack only has space for 5 things, which items should I take with me to school?",
+    "effects": [{"type": "fadeIn", "variable": "backpack"}],
+    "type": "script"
+  },
+  {
+    "scene": "packingItems",
+    "type": "special"
+  },
+  {
+    "text": "I think that should be all I need. Or should I pack something else instead?",
+    "effects": [
+      {"type":  "show", "variable": "tableYes"},
+      {"type":  "show", "variable": "tableNo"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "I hurried out the door with a hastily made sandwich in hand and headed off to school.",
+    "effects": [
+      {"type":  "hide", "variable": "tableYes"},
+      {"type":  "hide", "variable": "tableNo"}],
+    "type": "script"
+  },
+  {
+    "name": "location",
+    "location": "street.html",
+    "type": "transition"
+  },
+  {
+    "text": "On the way to school, I see my friend Affa also running late and running towards school.",
+    "effects": [{"type": "audio", "variable": "streetBGM"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Hey wait up!",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "effects" : [{"type": "character", "effect": "clothes", "clothing": "Clothes 2", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "text": "Affa looks back and sees me running up towards him. He slows down and lets me catch up.",
+    "characters": [{"name": "Affa", "action": "showRight"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "You late for class too?",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Yeah, my alarm went off but I didn't hear it. What about you?",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "I stayed up too late last night reading manga and slept until just a few minutes ago...",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Damn, we're both going to be scolded by the teacher later.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Since we're already late probably don't even really need to run anymore.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "That's true, we can't get any later than we are now, might as well save our energy.",
+    "type": "script"
+  },
+  {
+    "text": "We slow down and strike up a conversation with each other, talking about the manga he was reading last night and how it always ends on a cliffhanger and has to wait until next week to see what happened.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Speaking of manga, did you bring the manga I lent you today? You said you were going to return it last week but you forgot.",
+    "type": "script"
+  },
+  {
+    "name": "option",
+    "flag": "mangaStart",
+    "variable": "manga",
+    "type": "transition"
+  },
+  {
+    "text": "I bring out the manga from my backpack and hand it to Affa.",
+    "effects": [
+      {"type": "show", "variable": "street-manga"}],
+    "type": "script"
+  },
+  {
+    "scene": "givingManga",
+    "type": "special"
+  },
+  {
+    "name": "MC",
+    "text": "Here you go, I don't want to spoil you with what happened but I don't think it's my type of manga. It talks too much about historical things.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Yeah this manga is kinda heavy on history. I like reading these kinds of dialogue-heavy manga so I thought to see if you would like it but I guess not. I might go read it in class later and see how it is then.",
+    "type": "script"
+  },
+  {"flag": "mangaStart", "type": "flag"},
+  {
+    "text": "I hesitated for a moment, I once again had forgotten to take the manga with me. I was too much in a rush this morning and didn't have space to pack it.",
+    "effects": [{"type": "character", "effect": "confused", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Um... I'm still reading it and haven't finished it yet. Anyway, what sport are you going to be picking today?",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "I'm not sure yet, I'm going to see what they have to offer before I choose. If I don't like either I'll just not join. But did you bring my manga? I've been waiting for you to return it to start reading it.",
+    "effects": [{"type": "character", "effect": "lookAside", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I... Uhh...",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Let me guess, you don't have it with you again do you?",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Yes...",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Sighs... You said last week you were going to give it back to me this week! I've caught up to all the mangas' I'm reading and have been waiting for you to return it to me so I can start on it!",
+    "effects": [{"type": "character", "effect": "angry", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "It's a manga from one of my favourite games! I would have been reading it last night if you hadn't forgotten it last week.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I'm sorry! I'm sorry! I'll return it tomorrow! I promise!!",
+    "effects": [{"type": "character", "effect": "hardClosed", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "I'm never lending you any of my mangas again...",
+    "effects": [{"type": "character", "effect": "lookAside", "side": "right"}],
+    "type": "script"
+  },
+  {"flag": "mangaEnd", "type": "flag"},
+  {
+    "name": "location",
+    "location": "classroom-3A.html",
+    "type": "transition"
+  },
+  {
+    "text": "Once we arrived at school we picked up the pace and hurried to class. We entered the class just as the teacher was asking a question.",
+    "characters": [
+      {"name": "MC", "action": "showLeft"},
+      {"name": "Affa", "action": "showLeftExtra"}],
+    "effects": [{"type": "audio", "variable": "classroomBGM"}],
+    "type": "script"
+  },
+  {
+    "name": "option",
+    "flag": "bookStart",
+    "variable": "book",
+    "type": "transition"
+  },
+  {
+    "name": "Teacher",
+    "text": "Affa! Why are you late to class again! And MC too? Ok, I'll let you two answer this question. What was the first to land on the moon?",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "Affa", "action": "hideLeftExtra"}
+    ],
+    "effects": [
+      {"type":  "modify", "variable": "classroom3A1", "text": "Neil Armstrong"},
+      {"type":  "modify", "variable": "classroom3A2", "text": "Apollo 11"},
+      {"type":  "modify", "variable": "classroom3A3", "text": "Luna 2"},
+      {"type":  "show", "variable": "classroom3A1"},
+      {"type":  "show", "variable": "classroom3A2"},
+      {"type":  "show", "variable": "classroom3A3"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Neil Armstrong!",
+    "characters": [
+      {"name": "MC", "action": "showLeft"},
+      {"name": "Affa", "action": "showLeftExtra"},
+      {"name": "SchoolTeacher", "action": "showRight"}
+    ],
+    "effects": [
+      {"type":  "hide", "variable": "classroom3A1"},
+      {"type":  "hide", "variable": "classroom3A2"},
+      {"type":  "hide", "variable": "classroom3A3"}],
+    "type": "script"
+  },
+  {
+    "name": "Teacher",
+    "text": "Well... Yes, you are correct. Now hurry up and take your seats. There are a lot of things we need to go through today and don't have time to slow down.",
+    "type": "script"
+  },
+  {"flag": "bookClassroom3A2Start", "type": "flag"},
+  {
+    "name": "Affa",
+    "text": "Apollo 11!",
+    "characters": [
+      {"name": "MC", "action": "showLeft"},
+      {"name": "Affa", "action": "showLeftExtra"},
+      {"name": "SchoolTeacher", "action": "showRight"}
+    ],
+    "effects": [
+      {"type":  "hide", "variable": "classroom3A1"},
+      {"type":  "hide", "variable": "classroom3A2"},
+      {"type":  "hide", "variable": "classroom3A3"}],
+    "type": "script"
+  },
+  {
+    "name": "Teacher",
+    "text": "Technically yes, but we're talking about the first person to land on the moon.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "But you never specified it was for the first person, you just said what was the first to land on the moon.",
+    "type": "script"
+  },
+  {
+    "name": "Teacher",
+    "text": "Alright, alright. Just go take your seats. We have a lot to get through today and don't have time for this.",
+    "type": "script"
+  },
+  {"flag": "bookClassroom3A3Start", "type": "flag"},
+  {
+    "name": "Affa",
+    "text": "Luna 2!",
+    "characters": [
+      {"name": "MC", "action": "showLeft"},
+      {"name": "Affa", "action": "showLeftExtra"},
+      {"name": "SchoolTeacher", "action": "showRight"}],
+    "effects": [
+      {"type":  "hide", "variable": "classroom3A1"},
+      {"type":  "hide", "variable": "classroom3A2"},
+      {"type":  "hide", "variable": "classroom3A3"}],
+    "type": "script"
+  },
+  {
+    "name": "Teacher",
+    "text": "Hm... I mean Luna 2 did land on the moon before Neil Armstrong, but rather it crashed into the moon than landed on the moon.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "So I'm still correct?",
+    "type": "script"
+  },
+  {
+    "name": "Teacher",
+    "text": "Both of you just go take your seats, I have a lot of things to go through today and don't have time for this.",
+    "type": "script"
+  },
+  {"flag": "bookClassroom3A2End", "type": "flag"},
+  {"flag": "bookClassroom3A3End", "type": "flag"},
+  {"flag": "bookStart", "type": "flag"},
+  {
+    "name": "Teacher",
+    "text": "Affa! Why are you late to class again! And MC too? Ok, I'll let you two answer this question. Who became the president of the Nationalist Republic of China in 1928?",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "Affa", "action": "hideLeftExtra"}],
+    "effects": [
+      {"type":  "modify", "variable": "classroom3A1", "text": "Chiang Kai-shek"},
+      {"type":  "modify", "variable": "classroom3A2", "text": "Wang Tiancheng"},
+      {"type":  "modify", "variable": "classroom3A3", "text": "Huang Huaixin"},
+      {"type":  "show", "variable": "classroom3A1"},
+      {"type":  "show", "variable": "classroom3A2"},
+      {"type":  "show", "variable": "classroom3A3"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Chiang Kai-shek!",
+    "characters": [
+      {"name": "MC", "action": "showLeft"},
+      {"name": "Affa", "action": "showLeftExtra"},
+      {"name": "SchoolTeacher", "action": "showRight"}],
+    "effects": [
+      {"type":  "hide", "variable": "classroom3A1"},
+      {"type":  "hide", "variable": "classroom3A2"},
+      {"type":  "hide", "variable": "classroom3A3"}],
+    "type": "script"
+  },
+  {
+    "name": "Teacher",
+    "text": "You are... correct. Well then, hurry and go take your seats. We have a lot to go through today.",
+    "type": "script"
+  },
+  {"flag": "noBookClassroom3A2Start", "type": "flag"},
+  {
+    "name": "MC",
+    "text": "Wang Tiancheng!",
+    "characters": [
+      {"name": "MC", "action": "showLeft"},
+      {"name": "Affa", "action": "showLeftExtra"},
+      {"name": "SchoolTeacher", "action": "showRight"}],
+    "effects": [
+      {"type":  "hide", "variable": "classroom3A1"},
+      {"type":  "hide", "variable": "classroom3A2"},
+      {"type":  "hide", "variable": "classroom3A3"}],
+    "type": "script"
+  },
+  {
+    "name": "Teacher",
+    "text": "Incorrect, the correct answer is Chiang Kai-shek. You should brush up on your studies, this will all be in the test in 2 weeks. Now hurry to your seats, we have a lot to go through today.",
+    "type": "script"
+  },
+  {"flag": "noBookClassroom3A3Start", "type": "flag"},
+  {
+    "name": "MC",
+    "text": "Huang Huaixin!",
+    "characters": [
+      {"name": "MC", "action": "showLeft"},
+      {"name": "Affa", "action": "showLeftExtra"},
+      {"name": "SchoolTeacher", "action": "showRight"}],
+    "effects": [
+      {"type":  "hide", "variable": "classroom3A1"},
+      {"type":  "hide", "variable": "classroom3A2"},
+      {"type":  "hide", "variable": "classroom3A3"}],
+    "type": "script"
+  },
+  {
+    "name": "Teacher",
+    "text": "Incorrect, the correct answer is Chiang Kai-shek. You should brush up on your studies, this will all be in the test in 2 weeks. Now hurry to your seats, we have a lot to go through today.",
+    "type": "script"
+  },
+  {"flag": "noBookClassroom3A2End", "type": "flag"},
+  {"flag": "noBookClassroom3A3End", "type": "flag"},
+  {"flag": "bookEnd", "type": "flag"},
+  {
+    "text": "History class went on for the next hour with not much else exciting going on. After class ended we had some time before the next class started.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "So much content in class today, I don't know if I'll be ready for the exam.",
+    "characters": [
+      {"name": "MC", "action": "showLeft"},
+      {"name": "Affa", "action": "hideLeftExtra"},
+      {"name": "Affa", "action": "showRight"}],
+    "type": "script"
+  },
+  {
+    "name": "option",
+    "flag": "teaStart",
+    "variable": "manga",
+    "type": "transition"
+  },
+  {
+    "text": "I look over to see Affa focused on a book. What I thought was the history textbook was actually the manga I gave to him earlier today.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "You're reading the manga already? Did you even listen at all in class?",
+    "type": "script"
+  },
+  {
+    "text": "Affa looks up from his book at me.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "I was just getting up to the good part! I should be fine for the exam, I know all the important stuff already.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I thought you just read manga all day.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "I do, and this manga dives a lot into historical things too, didn't you say you read it?",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I did, but there were so many things I couldn't keep up with what happens when. Also, I thought that the stuff they talk about in manga is all fake.",
+    "effects": [{"type": "character", "effect": "dizzy", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Most manga usually are, or will take a real part of history and change it up a bit. But this manga tries to keep as original to the real past as possible.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I see...",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Oh I forgot to bring my water with me. MC can you buy a bottle of tea from the vending machine near the canteen?",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Can't you do that yourself?",
+    "effects": [{"type": "character", "effect": "reset", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "I could, but next class is starting in like 5 minutes and I'm nearly done with reading this chapter! I don't want to have to stop in the middle of a chapter.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Alright fine, but you owe me.",
+    "type": "script"
+  },
+  {"flag": "teaStart", "type": "flag"},
+  {
+    "text": "As I was about to get out of my seat for a stretch, I could feel an emanating presence coming from beside me. I look over to see Affa doing a cold stare at me.",
+    "effects": [{"type": "character", "effect": "angry2", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I can't help it if I forget to bring the manga with me!",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "...",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "... ...",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "... ... ...",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "... ... ...If you buy me a bottle of tea I will forgive you.",
+    "effects": [{"type": "character", "effect": "lookAside", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I'll go buy it straight away!",
+    "effects": [
+      {"type": "character", "effect": "hardClosed", "side": "left"},
+      {"type": "character", "effect": "confused", "side": "left"}],
+    "type": "script"
+  },
+  {"flag": "teaEnd", "type": "flag"},
+  {
+    "text": "I hurriedly walk out of class and over to the cafeteria.",
+    "characters": [{"name": "Affa", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "name": "location",
+    "location": "cafeteria.html",
+    "type": "transition"
+  },
+  {
+    "text": "I walk over to the vending machine near the cafeteria, since that is usually where most drinks are sold.",
+    "effects": [{"type": "audio", "variable": "cafeteriaBGM"}],
+    "type": "script"
+  },
+  {
+    "text": "I can see a bunch of snacks in the top section, followed by Coca-Cola and Pepsi and a few other soft drinks. At the bottom, I can see a row of lemon tea.",
+    "type": "script"
+  },
+  {
+    "text": "There are three brands of lemon tea available: Coop Lemon Tea, Lipton Ice Tea, and Ceylon Lemon Tea.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Luckily I know which lemon tea Affa likes best. I'll go with Coop Lemon Tea.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Now where is my wallet..",
+    "type": "script"
+  },
+  {
+    "text": "I reach into my pocket to grab my wallet to buy the drink.",
+    "type": "script"
+  },
+  {
+    "name": "option",
+    "flag": "walletStart",
+    "variable": "wallet",
+    "type": "transition"
+  },
+  {
+    "text": "I grab my wallet and check inside.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Ok I still have enough money to buy it, that's good.",
+    "type": "script"
+  },
+  {"flag": "walletStart", "type": "flag"},
+  {
+    "text": "I realise that I didn't to pack my wallet with me in the morning.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I can't exactly go back and ask Affa for money... I'll have to try asking my friend in 3B.",
+    "type": "script"
+  },
+  {
+    "text": "I have a friend called Izumi in 3B who I went to primary school together. We agreed together on coming to the same high school here.",
+    "type": "script"
+  },
+  {
+    "text": "We were together for most of the high school years, but unfortunately got separated in our third year. But we're still good friends and hang out sometimes.",
+    "type": "script"
+  },
+  {
+    "name": "location",
+    "location": "classroom-3B.html",
+    "type": "transition"
+  },
+  {
+    "text": "I run over to 3B's classroom and ask whether my friend Izumi is there.",
+    "effects": [{"type": "audio", "variable": "classroomBGM"}],
+    "type": "script"
+  },
+  {
+    "name": "Izumi",
+    "text": "Oh hey MC! What's up?",
+    "characters": [{"name": "Izumi", "action": "showLeft"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Izumi do you think you can lend me some money? I forgot to bring my money with me to buy something.",
+    "characters": [{"name": "MC", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 2", "side": "right"},
+      {"type": "character", "effect": "hardClosed", "side": "right"},
+      {"type": "character", "effect": "confused", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "name": "Izumi",
+    "text": "Oh sure! How much do you need?",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Just $5 should be enough.",
+    "type": "script"
+  },
+  {
+    "name": "Izumi",
+    "text": "Sure, just make sure to pay me back by tomorrow.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Izumi hands me a $5 note and I put it into my wallet.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I will! Thanks!",
+    "effects": [{"type": "character", "effect": "reset", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "text": "I run back to the vending machine and buy the Coop Lemon Tea.",
+    "characters": [{"action": "hideLeft"}],
+    "type": "script"
+  },
+  {"flag": "walletEnd", "type": "flag"},
+  {
+    "name": "location",
+    "location": "vending-machine.html",
+    "saveAudio": "cafeteriaBGM",
+    "type": "transition"
+  },
+  {
+    "text": "I pull out the $5 note and insert it into the machine.",
+    "effects": [{"type": "audio", "variable": "cafeteriaBGM"}],
+    "type": "script"
+  },
+  {
+    "text": "The machine beeps for a bit and eventually, the drink comes out at the bottom.",
+    "type": "script"
+  },
+  {
+    "text": "With the drink in hand, I head back to my class.",
+    "type": "script"
+  },
+  {
+    "name": "location",
+    "location": "classroom-3A-2.html",
+    "type": "transition"
+  },
+  {
+    "text": "Back in class, I give the lemon tea to Affa.",
+    "characters": [
+      {"name": "MC", "action": "showRight"},
+      {"name": "Affa", "action": "showLeft"}],
+    "effects": [
+      {"type": "audio", "variable": "classroomBGM"},
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 2", "side": "right"},
+      {"type": "show", "variable": "tea"}],
+    "type": "script"
+  },
+  {
+    "scene": "givingTea",
+    "type": "special"
+  },
+  {
+    "text": "Affa takes the tea from me.",
+    "type": "script"
+  },
+  {
+    "name": "option",
+    "flag": "giveStart",
+    "variable": "manga",
+    "type": "transition"
+  },
+  {
+    "name": "MC",
+    "text": "Here's your lemon tea. Make sure you pay me back.",
+    "type": "script"
+  },
+  {
+    "text": "Affa doesn't even look up from his manga and reaches his hand out to me. I hold the lemon tea towards his hand and he grabs it and puts the drink on the desk before continuing to read the manga.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "I will, thanks.",
+    "type": "script"
+  },
+  {"flag": "giveStart", "type":  "flag"},
+  {
+    "text": "Affa slowly looks up at me from his phone.",
+    "effects": [{"type": "character", "effect": "lookAside", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "...Fine, I'll forgive you this one time. But only because you bought my favourite lemon tea.",
+    "type": "script"
+  },
+  {
+    "text": "Despite what Affa said, I could see a small smile on his face after receiving the lemon tea.",
+    "effects": [{"type": "character", "effect": "reset", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I really won't forget it bring it tomorrow I promise!",
+    "effects": [
+      {"type": "character", "effect": "hardClosed", "side": "right"},
+      {"type": "character", "effect": "confused", "side": "right"}],
+    "type": "script"
+  },
+  {"flag": "giveEnd", "type": "flag"},
+  {
+    "text": "The rest of the classes went somewhat uneventfully. I was focusing on class and I didn't know what Affa was doing. But after class ended I was excited about the sports activities.",
+    "characters": [
+      {"name": "Affa", "action": "hideLeft"},
+      {"name": "MC", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "name": "location",
+    "location": "oval.html",
+    "type": "transition"
+  },
+  {
+    "text": "After class we were all asked to gather out to the oval behind the school.",
+    "effects": [{"type": "audio", "variable": "outdoorsBGM"}],
+    "type": "script"
+  },
+  {
+    "text": "When Affa and I arrive we could see the rest of the 3rd year students and the sports teacher waiting for us there.",
+    "type": "script"
+  },
+  {
+    "name": "Sports Teacher",
+    "text": "This year, due to the closing of the school oval for renovation we only have Tennis available for this semester. The oval should be completed by next semester where we will be able to offer track running again.",
+    "characters": [
+      {"name": "SportTeacher", "action": "showRight"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I mean, I've been doing tennis as my sport every semester so it won't affect me as much",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Yeah, I've been doing tennis for so long as well I don't know if I want to do track running even if it was offered.",
+    "characters": [{"name": "Affa", "action": "showRight"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I guess we'll be together doing tennis again for another semester then!",
+    "type": "script"
+  },
+  {
+    "name": "location",
+    "location": "tennis.html",
+    "saveAudio": "outdoorsBGM",
+    "type": "transition"
+  },
+  {
+    "text": "As we walk over to the tennis courts I reached behind me to grab my racquet. Affa also pulled his racquet from his bag.",
+    "characters": [
+      {"name": "MC", "action": "showLeft"},
+      {"name": "Affa", "action": "showRight"}],
+    "effects": [{"type": "audio", "variable": "outdoorsBGM"}],
+    "type": "script"
+  },
+  {
+    "name": "option",
+    "flag": "racquetStart",
+    "variable": "tennis_racquet",
+    "type": "transition"
+  },
+  {
+    "name": "MC",
+    "text": "I look at my racquet and then over to Affa's.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Your racquet grip looks a bit worn, you sure you shouldn't be strapping a new one?",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Yeah I probably should, but it's not like this one isn't working anymore. If I can still use it I should be fine.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I guess so.",
+    "type": "script"
+  },
+  {"flag": "racquetStart", "type": "flag"},
+  {
+    "text": "But I then remembered I didn't pack it with me.",
+    "effects": [{"type": "character", "effect": "shocked", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Oh... I forgot to bring my tennis racquet with me.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "I can lend you my racquet, I can just use the ones given by the school.",
+    "effects": [{"type": "character", "effect": "reset", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Aren't those like really bad?",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Yeah, but I know how much having a bad racquet affects your play.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "You sure you'll be fine with a school-provided one?",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "More fine than you using one.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "That's true...",
+    "type": "script"
+  },
+  {
+    "text": "I take the racquet from Affa and together we continue walking over to the tennis courts.",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "Affa", "action": "hideRight"}],
+    "type": "script"
+  },
+  {"flag": "racquetEnd", "type": "flag"},
+  {
+    "text": "As we open the gates into the courts we can see some other students already playing. There are also some students sitting on the side waiting for a court to be open to play.",
+    "type": "script"
+  },
+  {
+    "text": "Affa and I approach them to see if they want to play a match.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Hey, you guys waiting to play?",
+    "characters": [
+      {"name": "MC", "action": "showLeft"},
+      {"name": "Affa", "action": "showLeftExtra"},
+      {"name": "Affa", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "name": "Unknown Student 1",
+    "text": "Yeah, just waiting for one of those guys to finish playing so we can go on.",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "type": "script"
+  },
+  {
+    "name": "Unknown Student 2",
+    "text": "You both waiting too?",
+    "characters": [{"name": "Aris", "action": "showRightExtra"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Yeah. Do you want to play doubles? That way we can both get on the court faster and don't have to wait for each other.",
+    "type": "script"
+  },
+  {
+    "name": "Unknown Student 2",
+    "text": "Hm... We could try playing a doubles match. Ricky, what do you think?",
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "Aris and I were planning to just do singles but we could try doubles and see how it goes. It's been a bit since I did doubles.",
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "Alright then!",
+    "type": "script"
+  },
+  {
+    "text": "We chatted for a while and found out that their names were Ricky and Aris. They seem to be quite close friends.",
+    "type": "script"
+  },
+  {
+    "text": "They did some tennis on their own previously but was doing track running for sport. It was only because of the oval closure that they came and did tennis.",
+    "type": "script"
+  },
+  {
+    "text": "We probably could have kept on talking but one of the groups playing on the court left.",
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "How about we decide who goes with a coin flip?",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Why not. I'll go with... ",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "Affa", "action": "hideLeftExtra"},
+      {"name": "Ricky", "action": "hideRight"},
+      {"name": "Aris", "action": "hideRightExtra"}],
+    "effects": [
+      {"type":  "show", "variable": "tennis1"},
+      {"type":  "show", "variable": "tennis2"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Heads!",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "type": "script"
+  },
+  {
+    "text": "Aris pulls out a coin from his wallet and flips the coin in the air before letting it drop onto the floor.",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "type": "script"
+  },
+  {
+    "text": "After a bit of rolling around it eventually stops on heads.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Yes! I got it right!",
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "Well then I guess do you guys want to serve or receive?",
+    "characters": [{"name": "Ricky", "action": "showRightExtra"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Hm... Affa what do you think?",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "We can start by serving, you serve first though. I'm not the best at serving.",
+    "characters": [{"name": "Affa", "action": "showLeftExtra"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "We'll start by serving then!",
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "Ok, then we'll start over here and you guys over there.",
+    "type": "script"
+  },
+  {"flag": "coinFlipStart", "type": "flag"},
+  {
+    "name": "MC",
+    "text": "Tails!",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "type": "script"
+  },
+  {
+    "text": "Aris pulls out a coin from his wallet and flips the coin in the air before letting it drop onto the floor.",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "type": "script"
+  },
+  {
+    "text": "After a bit of rolling around it eventually stops on tails.",
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "Alright! Though I think Aris might still need some warming up so we'll start by receiving.",
+    "characters": [{"name": "Ricky", "action": "showRightExtra"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Oh ok. Then Affa do you want to start serving or I start serving?",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "You can start serving first, I need to warm up a bit too.",
+    "characters": [{"name": "Affa", "action": "showLeftExtra"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "If you say so. Then I'll go ahead and serve first.",
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "We'll go over here and you guys can start over there.",
+    "type": "script"
+  },
+  {"flag": "coinFlipEnd", "type": "flag"},
+  {
+    "name": "location",
+    "location": "tennis-game.html",
+    "type": "transition"
+  },
+  {
+    "text": "We ready into our positions on the court. Once everyone is standing in the right places I throw up the ball to perform a...",
+    "effects": [
+      {"type":  "show", "variable": "softServe"},
+      {"type":  "show", "variable": "hardServe"},
+      {"type":  "disableClick"},
+      {"type": "audio", "variable": "tennisBGM"}],
+    "type": "script"
+  },
+  {
+    "text": "I thought I should begin warming up first and start off with hitting a soft serve. I hit the ball over and it lands perfectly in the middle of the opponents' square.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Ricky is receiving and he returns the shot pretty easily. Maybe I should have started with a harder serve instead...",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "Come on! Is that all you guys have?",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "text": "Hearing this, despite not being able to see Affa's face, I could feel him firing up.",
+    "characters": [{"name": "Ricky", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "text": "I was about to return the shot when Affa runs in front of me and returns with a drop shot. Aris, who was at the net, didn't expect the shot and couldn't react in time to hit it.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Is that all you guys have? 15 love to us.",
+    "characters": [{"name": "Affa", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"},
+      {"type": "score", "side": "home", "value": "15"}],
+    "type": "script"
+  },
+  {
+    "name": "option",
+    "flag": "pissedStart",
+    "variable": "manga",
+    "type": "transition"
+  },
+  {
+    "text": "Alright, note to self. Don't piss off Affa.",
+    "characters": [{"name": "Affa", "action": "hideLeft"}],
+    "type": "script"
+  },
+  {"flag": "pissedStart", "type": "flag"},
+  {
+    "text": "I already know firsthand what a pissed off Affa is like. You don't want to piss off Affa...",
+    "characters": [{"name": "Affa", "action": "hideLeft"}],
+    "type": "script"
+  },
+  {"flag": "pissedEnd", "type": "flag"},
+  {"flag": "hardServeStart", "type": "flag"},
+  {
+    "text": "It is our first match with those guys, and I kind of want to show off my skill so I go with a hard serve.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "But it seems I didn't warm up enough yet and my aim was off and the ball hit the net.",
+    "effects": [{"type": "audio", "variable": "tennisHitNet"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Fault!",
+    "characters": [{"name": "Affa", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "text": "Affa grabs the ball and throws it over to me. I catch the ball and prepare to serve again. Focusing up, this is time I go for a...",
+    "characters": [{"name": "Affa", "action": "hideLeft"}],
+    "effects": [
+      {"type":  "show", "variable": "softServe"},
+      {"type":  "show", "variable": "hardServe"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "I go for a soft serve this time since serving hard didn't work the first time.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "The ball didn't fault this time but Ricky returns the shot pretty easily.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Affa tries hitting the ball but couldn't reach it so it is up to me to return it.",
+    "type": "script"
+  },
+  {
+    "text": "I should try go for a...",
+    "effects": [
+      {"type":  "show", "variable": "opponentLeftSide"},
+      {"type":  "show", "variable": "opponentMiddleSide"},
+      {"type":  "show", "variable": "opponentRightSide"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "My natural instinct is to hit for a cross-court shot, so I went for that. But I didn't notice Ricky already being there and returns with a straight shot.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Affa just barely touches the ball with his racquet and hits back to them, but the ball is moving slowly and leaves a pretty easy angle for them to hit back.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Preparing for their return shot, I go and stand...",
+    "effects": [
+      {"type":  "show", "variable": "selfLeftSide"},
+      {"type":  "show", "variable": "selfMiddleSide"},
+      {"type":  "show", "variable": "selfRightSide"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "Affa is standing on the right side of the net so I go and stand on the left side. Because of Affa's slow ball, Aris is able to hit it back with speed.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "I manage to swing and hit the ball back, but because of the ball's momentum I couldn't control the direction and it flew out.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "Yes! That's a point for us! Love 15!",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "effects": [
+      {"type": "score", "side": "away", "value": "15"},
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {"flag": "selfMiddleStart", "type": "flag"},
+  {
+    "text": "Standing in the middle is probably the best option since it lets me react faster to both left and right.",
+    "type": "script"
+  },
+  {
+    "text": "Ricky swings and hits back the ball before even the first bounce, but Affa is waiting at the net and smashes it down to the opponents side.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "The ball bounces so high and far back that Ricky nor Aris could run back and reach it to return it.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "15 love!",
+    "characters": [{"name": "Affa", "action": "showLeft"}],
+    "effects": [
+      {"type": "score", "side": "home", "value": "15"},
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {"flag": "selfRightStart", "type": "flag"},
+  {
+    "text": "Since Affa is already standing on the left, I go and stand on the right.",
+    "type": "script"
+  },
+  {
+    "text": "As expected, Ricky doesn't aim for Affa and aims for the back of the court where I am.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "The ball comes at me and I prepare for a backhand shot.",
+    "type": "script"
+  },
+  {
+    "name": "option",
+    "flag": "backhandStart",
+    "variable": "tennis_racquet",
+    "type": "transition"
+  },
+  {
+    "text": "I swing my racquet for a powerful backhand shot. It flies straight over to the opponents court and just barely bounces on the line before hitting the back fence.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Whoa that was amazing! We're going to need more shots of those! 15 love!",
+    "characters": [{"name": "Affa", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"},
+      {"type": "score", "side": "home", "value": "15"}],
+    "type": "script"
+  },
+  {"flag": "backhandStart", "type": "flag"},
+  {
+    "text": "I swing my racquet for a backhand shot, however I'm still not used to Affa's racquet yet. I return the shot but it hits the net and didn't make it over.",
+    "effects": [{"type": "audio", "variable": "tennisHitNet"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "Love 15!",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"},
+      {"type": "score", "side": "away", "value": "15"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "MC don't mind don't mind! We'll get the next point!",
+    "characters": [
+      {"name": "Affa", "action": "showLeft"},
+      {"name": "Ricky", "action": "hideRight"}],
+    "type": "script"
+  },
+  {"flag": "backhandEnd", "type": "flag"},
+  {"flag": "selfRightEnd", "type": "flag"},
+  {"flag": "selfMiddleEnd", "type": "flag"},
+  {"flag": "opponentMiddleStart", "type": "flag"},
+  {
+    "text": "Ricky is standing on the far left and Affa is standing fairly close to the right side, so seeing an opening in the middle, I go for a centre shot.",
+    "characters": [
+      {"name": "Aris", "action": "hideRight"},
+      {"name": "Affa", "action": "hideLeft"}],
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Ricky is too far left to reach the ball, but surprisingly Aris manages to reach the ball and even perform a drop shot back to us.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Affa stands in place for a split moment at the fact that Aris could reach the ball, but that split moment is enough time for Affa to not reach the ball.",
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "Yes! First point goes to us! Love 15!",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"},
+      {"type": "score", "side": "away", "value": "15"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Don't worry Affa! We'll get the next one!",
+    "characters": [
+      {"name": "MC", "action": "showLeft"},
+      {"name": "Aris", "action": "hideRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {"flag": "opponentRightStart", "type": "flag"},
+  {
+    "text": "I can see Ricky running towards the left anticipating for a cross court shot, so I go for a straight shot instead.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Aris is on the right side but is standing a bit closer to the middle. He runs to hit the ball but couldn't and bounces twice in their court.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Love 15!",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"},
+      {"type": "score", "side": "home", "value": "15"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "characters": [
+      {"name": "Ricky", "action": "showRight"},
+      {"name": "MC", "action": "hideLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "text": "That was a nice shot.",
+    "type": "script"
+  },
+  {"flag": "hardServeStart", "type": "flag"},
+  {
+    "text": "Maybe my first fault is just a fluke. I go for another hard serve.",
+    "type": "script"
+  },
+  {
+    "text": "This time the ball crosses over the net, but I accidentally aim too far towards the left and the ball bounces out.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "Double fault! That's 15 love to us!",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"},
+      {"type": "score", "side": "away", "value": "15"}],
+    "type": "script"
+  },
+  {"flag": "opponentRightEnd", "type": "flag"},
+  {"flag": "opponentMiddleEnd", "type": "flag"},
+  {"flag": "hardServeEnd", "type": "flag"},
+  {"flag": "hardServeEnd", "type": "flag"},
+  {
+    "name": "score",
+    "home": "15",
+    "away": "0",
+    "flag": "15-0_Start",
+    "type": "transition"
+  },
+  {
+    "text": "I prepare for my next serve, feeling good about scoring the first point and hit a...",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "Ricky", "action": "hideRight"},
+      {"name": "Affa", "action": "hideLeft"}],
+    "effects": [
+      {"type":  "show", "variable": "softServe"},
+      {"type":  "show", "variable": "hardServe"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "Hitting a soft serve seems to be the best plan for now. I'll switch to a harder serve later.",
+    "type": "script"
+  },
+  {
+    "text": "I hit another soft serve across the net, which Aris easily returns back. Affa tries to return with a cross-court shot but is unsuccessful as Ricky is standing back cross-court from the net and hits it towards me.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "I should return with a...",
+    "effects": [
+      {"type":  "show", "variable": "opponentLeftSide"},
+      {"type":  "show", "variable": "opponentMiddleSide"},
+      {"type":  "show", "variable": "opponentRightSide"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "I can see Aris standing by ready for a cross-court return, so I change my angle to hit a straight towards Ricky instead.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": " I knew you would go for me!",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "text": "Ricky returns the ball with a heavy topspin cross-court shot.",
+    "characters": [{"name": "Ricky", "action": "hideRight"}],
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Affa tries to return the ball but the momentum is too strong and bounces off Affa's racquet and lands out.",
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "Now we're even! 15 all!",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"},
+      {"type": "score", "side": "away", "value": "15"}],
+    "type": "script"
+  },
+  {"flag": "opponentMiddleStart", "type": "flag"},
+  {
+    "text": "Seeing Ricky and Aris standing far on opposite ends of the court, I decided to hit a centre shot through the middle.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "Ricky can you hit that?",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "text": "Aris isn't able to get into position to return the ball, so left it to Ricky to try and hit it.",
+    "characters": [{"name": "Aris", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "text": "Ricky reaches out to try and hit the ball but misses the ball and the ball lands and bounces off the back wall.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Yes! That's 30 love for us now!",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"},
+      {"type": "score", "side": "home", "value": "30"}],
+    "type": "script"
+  },
+  {"flag": "opponentRightStart", "type": "flag"},
+  {
+    "text": "My positioning isn't great after my serve and could only return with a cross-court shot.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Affa watch out!",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "text": "The ball is flying straight towards Affa, luckily Affa hears me and ducks away just in time for the ball to hit the net.",
+    "characters": [{"name": "MC", "action": "hideLeft"}],
+    "effects": [{"type": "audio", "variable": "tennisHitNet"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Whoa! Watch out next time!",
+    "characters": [{"name": "Affa", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "Well that's 15 all now I guess.",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"},
+      {"type": "score", "side": "away", "value": "15"}],
+    "type": "script"
+  },
+  {"flag": "hardServeStart", "type": "flag"},
+  {
+    "text": "I've warmed up a bit now, so I should be able to land a harder serve this time now right?",
+    "type": "script"
+  },
+  {
+    "text": "I feel myself landing a perfect hit on the ball at the centre of my racquet, and the ball bounces in their court and goes flying towards Aris.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "Whoa wha-",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}
+    ],
+    "type": "script"
+  },
+  {
+    "text": "Aris manages to hit the ball back towards our side, but it flies too far and went out behind us.",
+    "characters": [{"name": "Aris", "action": "hideRight"}],
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Out! That's 30 love to us!",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"},
+      {"type": "score", "side": "home", "value": "30"}],
+    "type": "script"
+  },
+  {"flag": "opponentRightEnd", "type": "flag"},
+  {"flag": "opponentMiddleEnd", "type": "flag"},
+  {"flag": "hardServeEnd", "type": "flag"},
+  {"flag": "15-0_Start", "type": "flag"},
+  {
+    "name": "MC",
+    "text": "Alright, we just lost the first point, but no big deal. We're still just warming up.",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "Ricky", "action": "hideRight"},
+      {"name": "Aris", "action": "hideRight"},
+      {"name": "Affa", "action": "hideLeft"}],
+    "type": "script"
+  },
+  {
+    "text": "I throw up the ball again and go for a...",
+    "characters": [{"name": "MC", "action": "hideLeft"}],
+    "effects": [
+      {"type":  "show", "variable": "softServe"},
+      {"type":  "show", "variable": "hardServe"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "I should play calm and start with a soft serve to try and get us back to even.",
+    "type": "script"
+  },
+  {
+    "text": "I hit a softer but more accurate serve to Aris. Aris moves forward to receive the ball but accidentally trips on the grass and can't reach to return the ball.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "Aris you ok??",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "characters": [{"name": "Ricky", "action": "hideRight"}],
+    "text": "Yeah I'm fine, it's just a small fall.",
+    "type": "script"
+  },
+  {
+    "text": "Aris gets up, pats the sand off his shirt and moves to the net ready for the next serve.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "That makes it 15 all now.",
+    "characters": [{"name": "Affa", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"},
+      {"type": "score", "side": "home", "value": "15"}],
+    "type": "script"
+  },
+  {"flag": "hardServeStart", "type": "flag"},
+  {
+    "text": "We're behind in points, I'll need to do a more powerful serve to try and service ace them.",
+    "type": "script"
+  },
+  {
+    "text": "I throw the ball up to make my serve, but accidentally hit too early and hit off the racquet frame instead of the strings.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "The ball went flying to the other side and miraculously still landed in.",
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "What serve is that!?",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "text": "Aris didn't expect such a fastball coming towards him and couldn't return the ball.",
+    "characters": [{"name": "Aris", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "That was a great serve MC.",
+    "characters": [{"name": "Affa", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Thanks, although that serve was from a hit on my racquet frame haha...",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "That makes it 15 all now.",
+    "effects": [{"type": "score", "side": "home", "value": "15"}],
+    "type": "script"
+  },
+  {"flag": "hardServeEnd", "type": "flag"},
+  {"flag": "15-0_End", "type": "flag"},
+
+  {
+    "name": "score",
+    "home": "30",
+    "away": "0",
+    "flag": "30-0_Start",
+    "type": "transition"
+  },
+  {
+    "text": "Usually it's times like these when people get naive and think that because they are far ahead they can risk a play.",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "Ricky", "action": "hideRight"},
+      {"name": "Aris", "action": "hideRight"},
+      {"name": "Affa", "action": "hideLeft"}],
+    "type": "script"
+  },
+  {"flag": "fillerEnd", "type": "flag"},
+  {
+    "text": "But feeling the adrenaline and momentum from being in the lead, I go for a...",
+    "effects": [
+      {"type":  "show", "variable": "softServe"},
+      {"type":  "show", "variable": "hardServe"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "Despite what people think I'm not that naive person. I'm going for a soft serve.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Aris receives the ball easily and makes a backhand return towards Affa.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Affa manages to hit the ball, but can't control the position and the ball flies out.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "Now we're finally on the scoreboard! 30-15!",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I guess I'm naive for thinking I can play safe...",
+    "characters": [
+      {"name": "Aris", "action": "hideRight"},
+      {"name": "MC", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "characters": [{"name": "Affa", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "text": "Did you say something?",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "No, nothing! Let's just keep playing! 30-15!",
+    "effects": [{"type": "score", "side": "away", "value": "15"}],
+    "type": "script"
+  },
+  {"flag": "hardServeStart", "type": "flag"},
+  {
+    "text": "I go for a hard serve again to try and secure a service ace, but once again my aim was off and the ball hit the net.",
+    "effects": [{"type": "audio", "variable": "tennisHitNet"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Don't mind don't mind! Just focus on the next serve!",
+    "type": "script"
+  },
+  {
+    "text": "I throw up the ball again, ready to hit my next serve. This time I go for a...",
+    "effects": [
+      {"type":  "show", "variable": "softServe"},
+      {"type":  "show", "variable": "hardServe"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "Not wanting to risk losing a point due to a double fault, I go for a soft serve, but accidentally hit too soft, making for an easy return for Aris.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "That's way too soft of a serve!",
+    "type": "script"
+  },
+  {
+    "text": "Aris makes a heavy backhand swing hits straight down the doubles line and just barely bounces in.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "Haha yes! We finally have a point on the board! 30-15!",
+    "effects": [{"type": "score", "side": "away", "value": "15"}],
+    "type": "script"
+  },
+  {"flag": "hardServeStart", "type": "flag"},
+  {
+    "text": "My previous fault must be just a fluke. I'll go for a hard serve again.",
+    "type": "script"
+  },
+  {
+    "text": "This time the ball went across the net, but I hit too far of an angle and the ball landed out.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "Double fault! That makes it 30-15!",
+    "effects": [{"type": "score", "side": "away", "value": "15"}],
+    "type": "script"
+  },
+  {"flag": "hardServeEnd", "type": "flag"},
+  {"flag": "hardServeEnd", "type": "flag"},
+  {"flag": "30-0_Start", "type": "flag"},
+  {
+    "text": "We're 15 all now, but I shouldn't get complacent just yet. Readying for my next serve, I throw the ball up and hit a...",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "Ricky", "action": "hideRight"},
+      {"name": "Aris", "action": "hideRight"},
+      {"name": "Affa", "action": "hideLeft"}],
+    "effects": [
+      {"type":  "show", "variable": "softServe"},
+      {"type":  "show", "variable": "hardServe"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {"flag": "fillerEnd", "type": "flag"},
+  {
+    "text": "I go for a soft serve to the opponent's side.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Ricky is the receiver again and easily returns my shot again.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "I see Affa moving to return the ball so I shout to Affa...",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Affa that's yours!",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "text": "I see Affa slightly nodding his head while eyeing the ball's movement.",
+    "characters": [{"name": "MC", "action": "hideLeft"}],
+    "type": "script"
+  },
+  {
+    "text": "Affa slices the shot but Aris is prepared for it and hits it back.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "text": "I'm not going to fall for a slice like that!",
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "text": "Aris hits it over Affa and bounces towards me. I prepare to return with a...",
+    "characters": [{"name": "Aris", "action": "hideRight"}],
+    "effects": [
+      {"type": "audio", "variable": "tennisHit"},
+      {"type":  "show", "variable": "opponentLeftSide"},
+      {"type":  "show", "variable": "opponentMiddleSide"},
+      {"type":  "show", "variable": "opponentRightSide"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "Affa is being blocked by Aris in front of me, so I can only hit cross-court where Ricky is standing.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "text": "Just where I want it to be!",
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "text": "Ricky lands a really good topspin shot straight over to our side of the court. Because Affa and I were standing on the same side, we couldn't run over fast enough to reach the ball before it bounced twice.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "Haha yes! Take that! We're in the lead now with 15-30!",
+    "effects": [{"type": "score", "side": "away", "value": "30"}],
+    "type": "script"
+  },
+  {"flag": "opponentMiddleStart" , "type": "flag"},
+  {
+    "text": "I see Aris marking Affa and Ricky standing opposite to Aris. I spot an opening in the middle and aim for that.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "However, Ricky is fast and manages to run to the middle and launch a lob into the air.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "I'm standing too close to the net and couldn't run back in time to return it.",
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "You thought you could catch me off guard!",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I'll get you next time!",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "Now it's 15-30!",
+    "effects": [{"type": "score", "side": "away", "value": "30"}],
+    "type": "script"
+  },
+  {"flag": "opponentRightStart" , "type": "flag"},
+  {
+    "text": "Affa is standing me being marked by Aris, and I can see Ricky on the opposite end predicting for my cross-court shot, so I decide to change it up and hit a straight.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Ricky instantly sees that I wasn't aiming for him and starts running to catch the ball.",
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "Aris! The ball!",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "text": "Aris is marking Affa so couldn't see the ball flying past from behind Affa.",
+    "characters": [{"name": "Ricky", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "Ah!",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "text": "The ball bounces twice in the opponent's court, Ricky couldn't reach it in time to return it.",
+    "characters": [{"name": "Aris", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "That was great work MC!",
+    "characters": [{"name": "Affa", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "You bet! 30-15!",
+    "characters": [{"name": "MC", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"},
+      {"type": "score", "side": "home", "value": "30"}],
+    "type": "script"
+  },
+  {"flag": "opponentMiddleEnd", "type": "flag"},
+  {"flag": "opponentRightEnd", "type": "flag"},
+  {"flag": "hardServeStart", "type": "flag"},
+  {
+    "text": "I should try and hit a hard serve to try and gain a lead.",
+    "type": "script"
+  },
+  {
+    "text": "I hit a perfect shot into the opponent's court, but Ricky is prepared this time and hits back with ease.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "Is that all you got?",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"},
+      {"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "The ball was too high for Affa to reach so it was up to me to return the shot.",
+    "characters": [{"name": "Ricky", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "text": "I look up and aim my racquet at the ball to prepare to hit back with a...",
+    "effects": [
+      {"type":  "show", "variable": "opponentLeftSide"},
+      {"type":  "show", "variable": "opponentMiddleSide"},
+      {"type":  "show", "variable": "opponentRightSide"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "I glance down quickly to see the positions of Ricky and Aris. I could see an opening in between them to try and make a cross-court shot.",
+    "type": "script"
+  },
+  {
+    "text": "I wait for the ball to bounce once, and hit a cross-court shot. But I didn't notice Ricky already moving to position for a cross-court return while the ball was bouncing.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "text": "You thought I was waiting for a cross-court shot didn't you?",
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "text": "Ricky makes a straight shot to the opposite side of our court and takes a point.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "Now we're in the lead, 15-30!",
+    "effects": [{"type": "score", "side": "away", "value": "30"}],
+    "type": "script"
+  },
+  {"flag": "opponentMiddleStart", "type": "flag"},
+  {
+    "text": "The ball was flying towards the middle of the court, so I didn't really have much choice except to return with a centre shot.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "As the ball flew through the centre of the opponent's court I could see Aris and Ricky moving to return the ball, but then also both stopping in their tracks just before the ball. The ball bounces past both of them. Both Affa and I looked at them confused.",
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "text": "I saw you moving towards the ball so I thought you were going to hit it.",
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "characters": [{"name": "Ricky", "action": "showLeft"}],
+    "text": "No I saw you moving towards it so I thought you were going to hit it!",
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "OK next time that happens again we shout who is going to hit the ball.",
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "OK ok.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Not sure what happened there but that's 30-15 to us!",
+    "characters": [
+      {"name": "Affa", "action": "showLeft"},
+      {"name": "Ricky", "action": "hideRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"},
+      {"type": "score", "side": "home", "value": "30"}],
+    "type": "script"
+  },
+  {"flag": "opponentRightStart", "type": "flag"},
+  {
+    "text": "I glance down to try and see the positions of Aris and Ricky, but Affa happens to be standing in a position that blocks my view from seeing them. I decide to go for a straight shot instead.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Aris pops out from my blind spot behind Affa to return the ball, but Affa swings his racquet and returns the ball back to the other side. The fast movement from Affa catches Aris off guard and couldn't react to return the ball.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "Affa! That was amazing! How did you do that?",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "characters": [{"name": "Affa", "action": "showLeft"}],
+    "text": "I don't know, I just instinctively swung my racquet and somehow managed the ball.",
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "That was awesome Affa, now we're leading 30-15!",
+    "characters": [{"name": "MC", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"},
+      {"type": "score", "side": "home", "value": "30"}],
+    "type": "script"
+  },
+  {"flag": "opponentMiddleEnd", "type": "flag"},
+  {"flag": "opponentRightEnd", "type": "flag"},
+  {"flag": "hardServeEnd", "type": "flag"},
+  {"flag": "30-0_End", "type": "flag"},
+
+  {
+    "name": "score",
+    "home": "30",
+    "away": "15",
+    "flag": "30-15_Start",
+    "type": "transition"
+  },
+  {
+    "text": "It's the next shot now, I don't want to lose our lead just yet! With the ball thrown high into the air, I go for a...",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "Ricky", "action": "hideRight"},
+      {"name": "Aris", "action": "hideRight"},
+      {"name": "Affa", "action": "hideLeft"}],
+    "effects": [
+      {"type":  "show", "variable": "softServe"},
+      {"type":  "show", "variable": "hardServe"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "It's probably best to still play safe for now and do the higher-risk plays later when I need it. I make a soft serve and as expected Ricky returns the shot with ease.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "I see Affa going for the shot but I feel I have a better chance of returning from my position",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Affa I got it!",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "Affa", "action": "showRight"}],
+    "text": "Oh alright!",
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "text": "As soon as Affa hears me call out he stops in his tracks and lets the ball pass him to me.",
+    "characters": [{"name": "Affa", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "text": "I return the shot back towards them and begin running back to the back centre of the court, but unexpectedly Aris manages to nick the ball with his racquet and comes back over to me.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "I tried running back to the corner to get the shot but turned around too quickly and slipped on the sandy court.",
+    "type": "script"
+  },
+  {
+    "text": "Affa sees me slip and comes up to check on me.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "MC! Are you ok?",
+    "characters": [{"name": "Affa", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I'm fine, it's just a small slip.",
+    "characters": [{"name": "MC", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "You alright there?",
+    "characters": [{"name": "Aris", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I'm ok! Let's continue on! 30 all now!",
+    "effects": [{"type": "score", "side": "away", "value": "30"}],
+    "type": "script"
+  },
+  {"flag": "hardServeStart", "type": "flag"},
+  {
+    "text": "I go for a hard smash and the ball lands perfectly in the centre of the opponent's square. I thought it was going to be a service ace but Ricky just barely manages to reach out and returns the ball high up over to us.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Affa you got that one!",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "Affa", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "text": "Alright!",
+    "type": "script"
+  },
+  {
+    "text": "Affa looks up and aims his racquet ready for a return. He lands a great return shot back to the other side but isn't enough to win the point.",
+    "characters": [{"name": "Affa", "action": "hideRight"}],
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Ricky was in position and returned with a cross-court shot over to me. With not much time to react, I return with a...",
+    "effects": [
+      {"type":  "show", "variable": "opponentLeftSide"},
+      {"type":  "show", "variable": "opponentMiddleSide"},
+      {"type":  "show", "variable": "opponentRightSide"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "With Ricky standing cross-court and Aris standing some distance away I try for a straight shot where there is no one standing. But I didn't expect Aris to react so fast and with a drop shot return they win the point.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "That makes it even! 30 all!",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"},
+      {"type": "score", "side": "away", "value": "30"}],
+    "type": "script"
+  },
+  {"flag": "opponentMiddleStart", "type": "flag"},
+  {
+    "text": "Aris and Ricky are standing evenly apart from each other, making it hard to choose a place to hit.",
+    "type": "script"
+  },
+  {
+    "text": "But hitting indirectly to someone would be better than directly to one of them right? So I aim for the centre where both are and return the shot.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "Aris you got it!",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "text": "Aris tries to reach for the ball but is standing too close to the net and can't react fast enough to hit it.",
+    "characters": [{"name": "Ricky", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "text": "Sorry!",
+    "type": "script"
+  },
+  {
+    "text": "Ricky, noticing that Aris couldn't get the ball, runs forward to try and hit the ball.",
+    "type": "script"
+  },
+  {
+    "text": "Ricky manages to sweep the ball from the ground up towards us, and it just barely hits the net and drops down in front of the net on our side.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Affa tried to reach for it but couldn't sweep it up off the ground in time before it bounced twice.",
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "text": "That was a close one! 30 all!",
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"},
+      {"type": "score", "side": "away", "value": "30"}],
+    "type": "script"
+  },
+  {"flag": "opponentRightStart", "type": "flag"},
+  {
+    "text": "Aris is standing in front opposite me so a straight shot is out of the question. I go for a backhand cross-court swing back to Ricky, but the ball flew too close to the centre court.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Aris, seeing an opportunity goes for a drop shot and takes a point. Affa wasn't close enough to return the ball.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "I bet you didn't expect me to return like that! 30 all!",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"},
+      {"type": "score", "side": "away", "value": "30"}],
+    "type": "script"
+  },
+  {"flag": "opponentRightEnd", "type": "flag"},
+  {"flag": "opponentMiddleEnd", "type": "flag"},
+  {"flag": "hardServeEnd", "type": "flag"},
+  {"flag": "30-15_Start", "type": "flag"},
+  {
+    "text": "I have to try to take the lead and get momentum back. I grip my racquet tightly and throw the ball up to aim for a...",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "Ricky", "action": "hideRight"},
+      {"name": "Aris", "action": "hideRight"},
+      {"name": "Affa", "action": "hideLeft"}],
+    "effects": [
+      {"type":  "show", "variable": "softServe"},
+      {"type":  "show", "variable": "hardServe"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {"flag": "fillerEnd", "type": "flag"},
+  {
+    "text": "I thought about swinging a hard serve, but in my split moment of thinking, I went for a soft serve instead.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "As expected Ricky returns the shot with no problems.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "I decided to try to go for a low shot to see if I could catch one of them off guard. I hit a low shot and aim it towards...",
+    "effects": [
+      {"type":  "show", "variable": "opponentLeftSide"},
+      {"type":  "show", "variable": "opponentMiddleSide"},
+      {"type":  "show", "variable": "opponentRightSide"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "I aim for a cross-court low shot close to the edge of the doubles line to make it hard for Ricky to return the shot. But I accidentally hit too low and the ball bounced on the net.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Affa and I looked on as the ball seemed to roll for a long time on the net before it finally rolled down to the opponent's side.",
+    "effects": [{"type": "audio", "variable": "tennisHitNet"}],
+    "type": "script"
+  },
+  {
+    "text": "Aris saw the ball dropping over to their side of the court but couldn't run fast enough to catch it.",
+    "type": "script"
+  },
+  {"flag": "opponentMiddleStart", "type": "flag"},
+  {
+    "text": "I aim for a centre low shot down the middle in the empty space between Ricky and Aris.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "As the ball flies over instead of going to the other side of the court it hits the net and starts dropping down to the opponent's side.",
+    "effects": [{"type": "audio", "variable": "tennisHitNet"}],
+    "type": "script"
+  },
+  {
+    "text": "As soon as the ball dropped down from the net Ricky and Aris both tried running to catch it but couldn't make it in time before it touched the ground.",
+    "type": "script"
+  },
+  {"flag": "opponentRightStart", "type": "flag"},
+  {
+    "text": "I aim for a straight low shot back towards Ricky again but as I do the ball hits the net and starts tumbling down to their side of the court.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Ricky sees this and immediately starts running to try and hit the ball before it touches the ground. I could see Aris running as well but both of them couldn't make it in time before it touched the ground.",
+    "effects": [{"type": "audio", "variable": "tennisHitNet"}],
+    "type": "script"
+  },
+  {"flag": "opponentRightEnd", "type": "flag"},
+  {"flag": "opponentMiddleEnd", "type": "flag"},
+  {
+    "name": "Aris",
+    "text": "You got lucky there, 30 all now.",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"},
+      {"type": "score", "side": "home", "value": "30"}],
+    "type": "script"
+  },
+  {"flag": "hardServeStart", "type": "flag"},
+  {
+    "text": "I swing my racquet as hard as I can and aim for the edge of the singles line.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Both Ricky and Aris look at the ball's trajectory and thought it was going to go out so didn't react to it, but surprisingly lands just barely in the line.",
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "text": "Wha-!?",
+    "type": "script"
+  },
+  {
+    "text": "Aris and Ricky looked at each other in shock at what just happened.",
+    "characters": [{"name": "Aris", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "That was awesome! 30 all!",
+    "characters": [{"name": "Affa", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"},
+      {"type": "score", "side": "home", "value": "30"}],
+    "type": "script"
+  },
+  {
+    "text": "I had thought it had gone out and was preparing to go for a second serve when Affa shouted out. I looked up in disbelief that my shot had gone in.",
+    "characters": [{"name": "Affa", "action": "hideLeft"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "text": "Oh! I clearly thought that it went out. I'll take that I guess haha.",
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+
+  {"flag": "hardServeEnd", "type": "flag"},
+  {"flag": "30-15_End", "type": "flag"},
+  {
+    "text": "We're two points away from winning the point. I have to start getting serious now. I throw up the ball once again and go for a...",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "Affa", "action": "hideLeft"},
+      {"name": "Ricky", "action": "hideRight"},
+      {"name": "Aris", "action": "hideRight"}],
+    "effects": [
+      {"type":  "show", "variable": "softServe"},
+      {"type":  "show", "variable": "hardServe"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "Going for a hard serve might be better since if I get a service ace it would be one point closer to set point, but if I somehow fault twice then it becomes twice as hard to win.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "I probably shouldn't overthink and go for a soft serve to guarantee my hitting accuracy.",
+    "type": "script"
+  },
+  {
+    "text": "I make my serve to Aris who calmly hits it back towards me.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {"flag": "hardServeStart", "type": "flag"},
+  {
+    "text": "I decide to go for a hard serve. If I can get a service ace here that would get us to set point and give us a better chance to win.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Unfortunately, the shot didn't end with a service ace. Aris must be starting to get used to my hard serves and manages to return it.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "You're going to have to do better than that!",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {"flag": "hardServeEnd", "type": "flag"},
+  {
+    "text": "The ball bounces back towards me and I prepare to return with a...",
+    "characters": [{"name": "Aris", "action": "hideRight"}],
+    "effects": [
+      {"type":  "show", "variable": "opponentLeftSide"},
+      {"type":  "show", "variable": "opponentMiddleSide"},
+      {"type":  "show", "variable": "opponentRightSide"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "I swing with probably the best topspin shot I've ever hit over to the opponent's side.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "The ball flies but hits the net at a weird angle and bounces up into the air over to the opponent's side.",
+    "effects": [{"type": "audio", "variable": "tennisHitNet"}],
+    "type": "script"
+  },
+  {
+    "text": "Ricky looks to be closer to the ball so I hear Aris shout...",
+    "type": "script"
+  },
+  {"flag": "opponentMiddleStart", "type": "flag"},
+  {
+    "text": "I see both Aris and Ricky standing pretty close to the net, so I decide to go with a lob to catch them off.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Both Aris and Ricky look up.",
+    "type": "script"
+  },
+  {"flag": "opponentRightStart", "type": "flag"},
+  {
+    "text": "I don't really see any openings with Aris and Ricky's positioning, so I return the ball with a normal straight shot.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "Ricky is standing preparing to return my shot when the ball hits the net and flies up.",
+    "effects": [{"type": "audio", "variable": "tennisHitNet"}],
+    "type": "script"
+  },
+  {"flag": "opponentMiddleEnd", "type": "flag"},
+  {"flag": "opponentRightEnd", "type": "flag"},
+  {
+    "name": "Aris",
+    "text": "Yours!",
+    "characters": [{"name": "Aris", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "characters": [
+      {"name": "Aris", "action": "hideRight"},
+      {"name": "Ricky", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "text": "Alright!",
+    "type": "script"
+  },
+  {
+    "text": "Aris moves closer to the net and away to the side while Ricky runs back to return the ball.",
+    "characters": [{"name": "Ricky", "action": "hideLeft"}],
+    "type": "script"
+  },
+  {
+    "text": "Not knowing where they might return the shot, I stand...",
+    "effects": [
+      {"type":  "show", "variable": "selfLeftSide"},
+      {"type":  "show", "variable": "selfMiddleSide"},
+      {"type":  "show", "variable": "selfRightSide"},
+      {"type":  "disableClick"}],
+    "type": "script"
+  },
+  {
+    "text": "I lobbed the ball a little bit to the right, so in theory the best chance to hit back the ball and have it land in would be to hit it left, so I run over to the left side.",
+    "type": "script"
+  },
+  {
+    "text": "Just as I am ready to return the ball all of a sudden it is as if time slowed down.",
+    "effects": [
+      {"type": "fadeIn", "variable": "vignette"},
+      {"type": "mute", "variable": "tennisBGM"}],
+    "type": "script"
+  },
+  {
+    "text": "I look over to see Ricky changing his position and eyeing the opposite corner.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "He's not going to hit it left, he's aiming for the right corner!",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "shocked", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "text": "I glance over at Affa, who is focusing on Aris and probably doesn't see Ricky's change in movement.",
+    "characters": [{"name": "MC", "action": "hideLeft"}],
+    "effects": [{"type":  "character", "effect": "reset", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "text": "It has to be me to get the ball.",
+    "type": "script"
+  },
+  {"flag": "selfMiddleStart", "type": "flag"},
+  {
+    "text": "If I keep an eye on which direction Ricky is looking just before he hits the shot, I should be able to predict it and run in that direction to return it.",
+    "type": "script"
+  },
+  {
+    "text": "Affa is standing closer to the left, ready for any shots that fly to the left towards him.",
+    "type": "script"
+  },
+  {
+    "text": "I crouch down and prepare to run in either direction when I feel as if time is suddenly slowing down.",
+    "effects": [
+      {"type": "fadeIn", "variable": "vignette"},
+      {"type": "mute", "variable": "tennisBGM"}],
+    "type": "script"
+  },
+  {
+    "text": "I watch as Ricky jumps in slow motion into the air to return the ball when I see it.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "He's going to slice the ball!",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "shocked", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "text": "I see a slight change in his racquet grip into one for slicing.",
+    "characters": [{"name": "MC", "action": "hideLeft"}],
+    "effects": [{"type":  "character", "effect": "reset", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "text": "I look over to Affa to see if he can return the slice, but he is being marked by Aris and his view of Ricky is probably blocked by him.",
+    "type": "script"
+  },
+  {
+    "text": "Only I see this and only I have a chance to return it.",
+    "type": "script"
+  },
+  {"flag": "selfRightStart", "type": "flag"},
+  {
+    "text": "I lobbed the ball a little bit to the right, so if he wanted to get a fast shot in it would be fastest to hit it to the right.",
+    "type": "script"
+  },
+  {
+    "text": "Affa is standing on the left side already so the left side should be fine.",
+    "type": "script"
+  },
+  {
+    "text": "I prepare myself to return the shot when all of a sudden it is as if time slowed down.",
+    "effects": [
+      {"type": "fadeIn", "variable": "vignette"},
+      {"type": "mute", "variable": "tennisBGM"}],
+    "type": "script"
+  },
+  {
+    "text": "I look over to see Ricky changing his positioning and eyeing a spot on the left.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "He's aiming for the space between me and Affa!",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "shocked", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "text": "I glance over to Affa who is focusing on marking Aris and don't think saw a change in Ricky's movement.",
+    "characters": [{"name": "MC", "action": "hideLeft"}],
+    "effects": [{"type":  "character", "effect": "reset", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "text": "It's up to me to try and go for it.",
+    "type": "script"
+  },
+  {"flag": "selfMiddleEnd", "type": "flag"},
+  {"flag": "selfRightEnd", "type": "flag"},
+  {
+    "scene": "runTennis",
+    "type": "special"
+  },
+  {
+    "text": "I rush over towards the ball, forcing my legs to move as if life depended on it.",
+    "effects": [{"type":  "playerWin"}],
+    "type": "script"
+  },
+  {
+    "text": "Before Ricky even hits the ball I am in the position of where the ball will be when it lands.",
+    "type": "script"
+  },
+  {
+    "text": "Ricky hits the ball and I instantly return it back towards him.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "text": "I hit the ball and it flies back into their court before Ricky even touches the ground to react to return the ball again.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Whoa... What just happened... Did I just do that?",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "hide", "variable": "vignette"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "That was amazing MC! How did you know where he would hit the ball?",
+    "characters": [{"name": "Affa", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"},
+      {"type": "play", "variable": "tennisBGM"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I don't know... It just felt like he was going to hit it there.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Well either way now we're leading for match point! 40-30!",
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "I don't know what you did there but that was cool.",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "text": "The rest of the match went pretty well for us. Using the momentum we gained from that shot earlier, we won the first point.",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "Ricky", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "text": "It did start to get pretty close near the end but Affa and I managed to pull through and win the game.",
+    "type": "script"
+  },
+  {"flag": "runFailedStart", "type": "flag"},
+  {
+    "text": "Despite seeing everything in slow motion, I couldn't get my legs to move to reach for the ball.",
+    "type": "script"
+  },
+  {
+    "text": "I can only stand still as I watch Ricky hit the ball and it bounce into our side of our court past me and to the back fence.",
+    "effects": [{"type": "audio", "variable": "tennisHit"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "MC the- Oh...",
+    "characters": [{"name": "Affa", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"},
+      {"type": "hide", "variable": "vignette"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "Ricky that was an awesome shot!",
+    "characters": [
+      {"name": "Affa", "action": "hideLeft"},
+      {"name": "Aris", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"},
+      {"type": "play", "variable": "tennisBGM"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "characters": [{"name": "Ricky", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "text": "That was great! 30-40 match point!",
+    "type": "script"
+  },
+  {
+    "text": "The rest of the match didn't go too well for us. Ricky and Aris used their momentum from that earlier shot to win the point.",
+    "characters": [
+      {"name": "Ricky", "action": "hideLeft"},
+      {"name": "Aris", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "name": "option",
+    "flag": "affaRacquetStart",
+    "variable": "tennis_racquet",
+    "type": "transition"
+  },
+  {
+    "name": "MC",
+    "text": "I guess we're going to need to practice some more.",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "left"},
+      {"type": "character", "effect": "hideHat", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Yeah. Have some things I feel like I can improve on from what I played today.",
+    "characters": [{"name": "Affa", "action": "showRight"}],
+    "effects": [
+      {"type": "character", "effect": "clothes", "clothing": "Clothes 6", "side": "right"},
+      {"type": "character", "effect": "hideHat", "side": "right"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Oh? Like what?",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "I've been trying this new strategy called hover step. You kind of half jump and stand still on the spot.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "The point of it is to keep your feet in the air when you run for the ball so you can push off easier",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Huh... That sounds pretty cool. I might have you teach me that some time.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Sure!",
+    "type": "script"
+  },
+  {"flag": "affaRacquetStart", "type": "flag"},
+  {
+    "text": "Despite Affa's best attempts, there was only so much you could do with the school racquet.",
+    "type": "script"
+  },
+  {
+    "text": "Some of the hits were weird, and by the end of the third point some strings had even come loose.",
+    "type": "script"
+  },
+  {
+    "text": "If only I had brought my racquet with me today then we might have been better off.",
+    "type": "script"
+  },
+  {"flag": "affaRacquetEnd", "type": "flag"},
+  {"flag": "runFailedEnd", "type": "flag"},
+  {
+    "name": "location",
+    "location": "after-game.html",
+    "type": "transition"
+  },
+  {
+    "text": "At the end of it all we start to pack up our things and prepare to go home.",
+    "effects": [{"type": "audio", "variable": "sunsetBGM"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "That was an amazing game.",
+    "characters": [{"name": "Ricky", "action": "showRight"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "You can say that again.",
+    "characters": [{"name": "Affa", "action": "showLeft"}],
+    "type": "script"
+  },
+  {
+    "name": "option",
+    "flag": "winStart",
+    "variable": "playerWin",
+    "type": "transition"
+  },
+  {
+    "name": "Aris",
+    "text": "Though we didn't win, that was still a fun game.",
+    "characters": [{"name": "Aris", "action": "showRightExtra"}],
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "The way you returned my shots in the third game was freaky! It was as if you could see my moves in slow motion and predict my hits!",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "If only I could do that for real haha!",
+    "characters": [{"name": "MC", "action": "showLeftExtra"}],
+    "type": "script"
+  },
+  {
+    "text": "Yeah if only...",
+    "characters": [
+      {"name": "MC", "action": "hideLeftExtra"},
+      {"name": "Affa", "action": "hideLeft"},
+      {"name": "Ricky", "action": "hideRight"},
+      {"name": "Aris", "action": "hideRightExtra"}],
+    "type": "script"
+  },
+  {"flag": "winStart", "type": "flag"},
+  {
+    "name": "MC",
+    "text": "Next time it's going to be us who will win!",
+    "characters": [{"name": "MC", "action": "showLeftExtra"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "Is that a challenge? I'm going to make you eat your words!",
+    "characters": [{"name": "Aris", "action": "showRightExtra"}],
+    "type": "script"
+  },
+  {"flag": "winEnd", "type": "flag"},
+  {
+    "name": "Affa",
+    "characters": [
+      {"name": "Aris", "action": "hideRightExtra"},
+      {"name": "MC", "action": "hideLeftExtra"},
+      {"name": "Affa", "action": "hideLeft"},
+      {"name": "Affa", "action": "showRight"}],
+    "text": "Come on guys hurry up, the sun is setting and the school is closing up!",
+    "type": "script"
+  },
+  {
+    "text": "I look over to see Affa already packed up and ready to go.",
+    "characters": [{"name": "Aris", "action": "hideLeftExtra"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "text": "How did you pack up so fast! We didn't even chat for that long!",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "MC", "action": "showRight"}],
+    "text": "Hey guys do you want to play together again next week?",
+    "type": "script"
+  },
+  {
+    "name": "Ricky",
+    "text": "Sure! I'd be up for that.",
+    "characters": [{"name": "Ricky", "action": "showLeft"}],
+    "type": "script"
+  },
+  {
+    "name": "Aris",
+    "text": "I second that!",
+    "characters": [{"name": "Aris", "action": "showLeftExtra"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I'll take my leave first then, see you guys next week!",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Bye!",
+    "characters": [
+      {"name": "Ricky", "action": "hideLeft"},
+      {"name": "Aris", "action": "hideLeftExtra"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Affa wait up!",
+    "characters": [{"name": "MC", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "text": "I wave goodbye to Ricky and Aris and run over to Affa just closing the tennis gate but sees me and opens the gate again.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Thanks Affa.",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "What do you think?",
+    "characters": [{"name": "Affa", "action": "showRight"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Think about what?",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Ricky and Aris. They said they did some tennis on their own but didn't really start doing it until this semester because of the oval closure.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Sounds kind of like us doesn't it haha.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Oh?",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Remember how we first started playing tennis for the school sport? Back then there wasn't even an oval yet, it was just a forest of trees.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Oh yeah... And we didn't have proper courts either back then. We literally drew the courts with chalk and played like that.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Ricky and Aris are lucky to have actual courts to play on.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "Haha that's for sure!",
+    "type": "script"
+  },
+  {
+    "name": "location",
+    "location": "school-gates.html",
+    "saveAudio": "sunsetBGM",
+    "type": "transition"
+  },
+  {
+    "text": "We chat for a bit until we reach the school gates where I see Izumi standing at the entrance reading a book.",
+    "characters": [{"name": "Izumi", "action": "showRight"}],
+    "effects": [{"type": "audio", "variable": "sunsetBGM"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Izumi! You were waiting for me?",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "type": "script"
+  },
+  {
+    "name": "Izumi",
+    "text": "Oh MC! Are you done with your game?",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Yeah, it was awesome! I was playing doubles with Affa and playing with some new friends and was so close to winning when got this slow motion thing going on and-",
+    "type": "script"
+  },
+  {
+    "name": "Izumi",
+    "text": "Sounds like you had a lot of fun.",
+    "type": "script"
+  },
+  {
+    "name": "Izumi",
+    "text": "I did!",
+    "type": "script"
+  },
+  {
+    "text": "I look back to see Affa walking off in the other direction.",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "MC", "action": "showRight"},
+      {"name": "Izumi", "action": "showRightExtra"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "characters": [{"name": "Affa", "action": "showLeft"}],
+    "text": "Oh yeah Affa you live that way don't you? I guess we separate here then, see you tomorrow!",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "See ya MC!",
+    "type": "script"
+  },
+  {
+    "name": "option",
+    "flag": "readMangaStart",
+    "variable": "manga",
+    "type": "transition"
+  },
+  {
+    "text": "Affa reaches into his bag and pulls out the manga.",
+    "type": "script"
+  },
+  {
+    "name": "Affa",
+    "text": "I'm going to go home and finish reading this manga. Thanks for returning it today.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "No problem, see you tomorrow!",
+    "type": "script"
+  },
+  {"flag": "readMangaStart", "type": "flag"},
+  {
+    "name": "Affa",
+    "text": "Make sure you bring the manga tomorrow!!! If you forget again......",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I won't I won't!!! I'll make sure to bring it tomorrow!",
+    "type": "script"
+  },
+  {"flag": "readMangaEnd", "type": "flag"},
+  {
+    "text": "I wave goodbye to Affa and continue walking with Izumi.",
+    "characters": [
+      {"name": "MC", "action": "showLeft"},
+      {"name": "Izumi", "action": "showRight"},
+      {"name": "Izumi", "action": "hideRightExtra"}],
+    "type": "script"
+  },
+  {
+    "name": "option",
+    "flag": "izumiStart",
+    "variable": "wallet",
+    "type": "transition"
+  },
+  {"flag": "izumiStart", "type": "flag"},
+  {
+    "name": "Izumi",
+    "text": "You make sure to return my $5 back as well tomorrow.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I won't forget!",
+    "type": "script"
+  },
+  {"flag": "izumiEnd", "type": "flag"},
+  {
+    "text": "I walk home with Izumi and chat with him for a while before he too splits off.",
+    "characters": [
+      {"name": "MC", "action": "hideLeft"},
+      {"name": "Izumi", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "See you tomorrow Izumi!",
+    "characters": [{"name": "MC", "action": "showLeft"}],
+    "type": "script"
+  },
+  {
+    "name": "Izumi",
+    "text": "Bye MC! Don't be late for school again like you did today!",
+    "characters": [{"name": "Izumi", "action": "showRight"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Wha-! How did you know??",
+    "effects": [{"type": "character", "effect": "shocked", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "text": "My face blushed red from embarrassment.",
+    "type": "script"
+  },
+  {
+    "name": "Izumi",
+    "text": "I saw you running into the school from the window of my classroom haha.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I won't be late!",
+    "effects": [{"type": "character", "effect": "hardClosed", "side": "left"}],
+    "type": "script"
+  },
+  {
+    "text": "Izumi waves me goodbye and walks off.",
+    "characters": [{"name": "Izumi", "action": "hideRight"}],
+    "type": "script"
+  },
+  {
+    "name": "location",
+    "location": "dark-sky.html",
+    "type": "transition"
+  },
+  {
+    "text": "As I am walking home I begin to ponder the events that happened at school today.",
+    "effects": [{"type": "audio", "variable": "nightBGM"}],
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "So many things happened today...",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I was in such a rush this morning I couldn't pack everything into my bag.",
+    "type": "script"
+  },
+  {
+    "name": "option",
+    "flag": "reminisceMangaStart",
+    "variable": "manga",
+    "type": "transition"
+  },
+  {
+    "name": "MC",
+    "text": "Luckily I remembered to bring return the manga back to Affa today.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "He was really looking forward to reading it after I had finished with it.",
+    "type": "script"
+  },
+  {
+    "text": "I don't want to think what would have happened if I had forgotten it...",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "But he was so focused reading it in class that even asks me to go buy tea that he usually go buys himself!",
+    "type": "script"
+  },
+  {"flag": "reminisceMangaStart", "type": "flag"},
+  {
+    "name": "MC",
+    "text": "I forgot to bring the manga I was supposed to return to Affa today and he got really mad...",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "He did manage to forgive me in the end after I bought him that tea which I guess is good."
+  },
+  {"flag": "reminisceMangaEnd", "type": "flag"},
+  {
+    "name": "option",
+    "flag": "reminisceWalletStart",
+    "variable": "wallet",
+    "type": "transition"
+  },
+  {"flag": "reminisceWalletStart", "type": "flag"},
+  {
+    "name": "MC",
+    "text": "Speaking of tea I also forgot my wallet too and had to borrow from Izumi!",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I'll have to make sure to remember to pay him back tomorrow",
+    "type": "script"
+  },
+  {"flag": "reminisceWalletEnd", "type": "flag"},
+  {
+    "name": "option",
+    "flag": "reminisceRacquetStart",
+    "variable": "tennis_racquet",
+    "type": "transition"
+  },
+  {
+    "name": "MC",
+    "text": "I also remembered to bring my own tennis racquet with me today.",
+    "type": "script"
+  },
+  {"flag": "fillerEnd", "type": "flag"},
+  {"flag": "fillerEnd", "type": "flag"},
+  {
+    "name": "MC",
+    "text": "I can't imagine ever using the school ones to play, they're worn and horrible to use.",
+    "type": "script"
+  },
+  {
+    "text": "I shiver at the thought of just holding them.",
+    "type": "script"
+  },
+  {"flag": "reminisceRacquetStart", "type": "flag"},
+  {
+    "name": "MC",
+    "text": "Then after all that I even forgot to take my racquet with me and had to borrow Affa's one.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "I hope I didn't affect Affa's play too much with him using the school racquet.",
+    "type": "script"
+  },
+  {"flag": "reminisceRacquetEnd", "type": "flag"},
+  {
+    "name": "MC",
+    "text": "Well! Today's already past and I can't go back in time to see what's happened has happened.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Hopefully I'll have just as fun of a school day tomorrow as I did today.",
+    "type": "script"
+  },
+  {
+    "name": "MC",
+    "text": "Oh! I forgot today is my night to cook! My brother must be waiting ages for me to get home! I have to hurry back!",
+    "type": "script"
+  },
+  {
+    "name": "location",
+    "location": "index.html",
+    "type": "transition"
+  }
+]
